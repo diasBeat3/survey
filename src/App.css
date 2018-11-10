@@ -3,15 +3,36 @@
 }
 
 .section-background {
-  display: flex;
-  justify-content: center;
   height: 100vh;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
+.about-button-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+  background-color: #282c34;
+}
+
+.title-quest-wrapper {
+  box-sizing: border-box;
+  padding-top: 150px;
+}
+
+.about-background {
+  position: absolute;
+  width: 90vh;
+}
+
 .quest-wrapper {
   display: flex;
-  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-wrapper {
+  display: flex;
 }
 
 .quest {

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Comp2 } from "./Comp2";
+import { About } from "./About";
 
 export class Comp1 extends React.Component {
   
@@ -25,18 +26,23 @@ export class Comp1 extends React.Component {
 
     return (
       <section>
-        <div className="col-sm-12 quest-wrapper">
+        <div>
             {this.state.showComp1 ? <div className="quest">
+            <div className="title-quest-wrapper">
+              <div className="title-wrapper">
               <h3>Questão 1</h3>
+              </div>
+              <div className="quest-wrapper">
               <ul>
-                <li>Resposta 1</li>
-                <li>Resposta 2</li>
-                <li>Resposta 3</li>
+                <li onClick={this.props.toRadio}>Rádio</li>
+                <li>Música</li>
+                <li>Cinema</li>
                 <li>Resposta 4</li>
               </ul>
+              </div>
+              </div>
               <button onClick={this.nextPage}>next</button>
             </div> : <Comp2></Comp2>}
-            
         </div>
       </section>
     );

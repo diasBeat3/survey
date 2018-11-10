@@ -28,7 +28,7 @@ export class Main extends React.Component {
   }   
 
   onAddToRadio = () => {
-    this.state.total.radio++;
+    if (this.state.total.radio++)
     
     console.log(this.state.total.radio)
   }
@@ -39,9 +39,12 @@ export class Main extends React.Component {
 
     return (
       <section className="section-background">
+        <div className="about-button-wrapper col-sm-12">
+          <button className="about-button">About</button>
+        </div>
         <div className="col-sm-12 quest-wrapper">
-           <Comp1></Comp1>
-          </div>
+           <Comp1 toRadio={this.onAddToRadio}></Comp1>
+        </div>
       </section>
     );
   }
