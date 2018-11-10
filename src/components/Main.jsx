@@ -33,13 +33,6 @@ export class Main extends React.Component {
     console.log(this.state.total.radio)
   }
 
-  toggle = () => {
-    this.setState({
-      on: !this.state.on
-    })
-
-  }
-
   render() {
     
     var question = this.state.questions[0]

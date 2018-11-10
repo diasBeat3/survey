@@ -14,8 +14,11 @@ export class Comp1 extends React.Component {
 
   nextPage = () => {
     this.setState({
-      showComp1: false
+      showComp1: false,
+      showComp2: true
     })
+
+    console.log(this.state.showComp2)
   }
     
   render() {
@@ -31,8 +34,9 @@ export class Comp1 extends React.Component {
                 <li>Resposta 3</li>
                 <li>Resposta 4</li>
               </ul>
+              <button onClick={this.nextPage}>next</button>
             </div> : <Comp2></Comp2>}
-            <button onClick={this.nextPage}>></button>
+            
         </div>
       </section>
     );
