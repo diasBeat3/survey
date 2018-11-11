@@ -28,18 +28,19 @@ export class Comp1 extends React.Component {
       <section>
         <div>
             {this.state.showComp1 ? <div className="quest">
-            <div className="title-quest-wrapper">
-              <div className="title-wrapper">
-              <h3>Questão 1</h3>
-              </div>
-              <div className="quest-wrapper">
-              <ul>
-                <li onClick={this.props.toRadio}>Rádio</li>
-                <li>Música</li>
-                <li>Cinema</li>
-                <li>Resposta 4</li>
-              </ul>
-              </div>
+              <div className="title-quest-wrapper">
+                  <div className="title-wrapper">
+                    <h3>Questão 1</h3>
+                  </div>
+
+                  <div className="quest-wrapper">
+                    <ul>
+                      <li onClick={this.props.toRadio}>Rádio</li>
+                      <li>Música</li>
+                      <li>Cinema</li>
+                      <li>Resposta 4</li>
+                    </ul>
+                  </div>
               </div>
               <button onClick={this.nextPage}>next</button>
             </div> : <Comp2></Comp2>}

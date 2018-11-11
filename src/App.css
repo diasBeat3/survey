@@ -21,23 +21,40 @@
 }
 
 .about-background {
-  position: absolute;
-  width: 90vh;
+  box-sizing: border-box;
+  font-size: 50px;
+  margin: 20px;
+  padding-top: 20%;
+  text-align: center;
+  background-color: #282c3441;
+  height: 87vh;
 }
 
 .quest-wrapper {
   display: flex;
   justify-content: center;
-  align-content: center;
-}
-
-.title-wrapper {
-  display: flex;
 }
 
 .quest {
   text-align: center;
   font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
+
+ul > li {
+  background-color: #c2c3c479;
+  margin-bottom: 5px;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  cursor: pointer;
+}
+
+ul > li:hover {
+  background-color: #8d8d8d79;
 }
 
 .App-logo {

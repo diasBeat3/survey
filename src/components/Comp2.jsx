@@ -7,11 +7,11 @@ export class Comp2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        showComp1: false,
-        showComp2: true,
-        showComp3: false,
+      showComp1: false,
+      showComp2: true,
+      showComp3: false,
     }
-  }   
+  }
 
   previousPage = () => {
     this.setState({
@@ -28,25 +28,31 @@ export class Comp2 extends React.Component {
       showComp3: true
     })
   }
-    
+
   render() {
 
     return (
       <section>
+        {this.state.showComp1 ? <Comp1></Comp1> : null}
         <div className="col-sm-12 quest-wrapper">
-            {this.state.showComp1 ? <Comp1></Comp1> : null}
-            {this.state.showComp2 ? <div className="quest">
-              <h3>Questão 2</h3>
-              <ul>
-                <li>Resposta 1</li>
-                <li>Resposta 2</li>
-                <li>Resposta 3</li>
-                <li>Resposta 4</li>
-              </ul>              
-              <button onClick={this.previousPage}>previous</button>
-              <button onClick={this.nextPage}>next</button>
-            </div> : null }
-            {this.state.showComp3 ? <Comp3></Comp3> : null}
+          {this.state.showComp2 ? <div className="quest">
+            <div className="title-quest-wrapper">
+              <div className="title-wrapper">
+                <h3>Questão 2</h3>
+              </div>
+              <div className="quest-wrapper">
+                <ul>
+                  <li onClick={this.props.toRadio}>Rádio</li>
+                  <li>Música</li>
+                  <li>Cinema</li>
+                  <li>Resposta 4</li>
+                </ul>
+              </div>
+            </div>
+            <button onClick={this.previousPage}>previous</button>
+            <button onClick={this.nextPage}>next</button>
+          </div> : null}
+          {this.state.showComp3 ? <Comp3></Comp3> : null}
         </div>
       </section>
     );
