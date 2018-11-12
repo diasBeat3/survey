@@ -5,21 +5,22 @@
 .section-background {
   height: 100vh;
   /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-  background-image: url('./img/fundo_roxo.png');
+  background-image: url('./img/roxo2-01.png');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .about-button-wrapper {
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
-  padding: 2em;
+  padding: 0.5em;
   background-color: #282c34;
 }
 
 .title-quest-wrapper {
   box-sizing: border-box;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .about-background {
