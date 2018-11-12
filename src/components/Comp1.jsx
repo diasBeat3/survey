@@ -30,12 +30,12 @@ export class Comp1 extends React.Component {
             {this.state.showComp1 ? <div className="quest">
               <div className="title-quest-wrapper">
                   <div className="title-wrapper">
-                    <h3>Questão 1</h3>
+                    <h3>Como descreverias os teus hábitos de sono? 1</h3>
                   </div>
 
                   <div className="quest-wrapper">
                     <ul>
-                      <li onClick={this.props.toRadio}>Rádio</li>
+                      <li onClick={this.props.toRadio}>Se não dormir 8 horas, nem vale a pena sair de casa.</li>
                       <li>Música</li>
                       <li>Cinema</li>
                       <li>Resposta 4</li>

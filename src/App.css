@@ -29,7 +29,10 @@
   background-color: #282c3441;
   height: 87vh;
 }
+h3 {
+  font-family: FjallaOne-Regular
 
+}
 .quest-wrapper {
   display: flex;
   justify-content: center;
