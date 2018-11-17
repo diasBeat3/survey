@@ -65,6 +65,7 @@
 
 .radio-total-wrapper {
   display: flex;
+  color: white;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -74,6 +75,7 @@
 
 .jorna-total-wrapper {
   display: flex;
+  color: white;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -83,6 +85,7 @@
 
 .teatro-total-wrapper {
   display: flex;
+  color: white;
   justify-content: center;
   width: 100vw;
   height: 100vh;
@@ -92,11 +95,12 @@
 
 .humana-total-wrapper {
   display: flex;
+  color: white;
   justify-content: center;
   width: 100vw;
   height: 100vh;
   font-size: 50px;
-  background-color: greenyellow;
+  background-color: rgb(81, 116, 53);
 }
 
 .about-background {

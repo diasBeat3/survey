@@ -24,7 +24,7 @@ export class Result extends React.Component {
 
   showResultHumana = () => {
     return <div>
-      <div className="radio-total-wrapper">
+      <div className="humana-total-wrapper">
         <div>
           Parabéns, ficaste na categoria Humana!
           </div>
@@ -34,7 +34,7 @@ export class Result extends React.Component {
 
   showResultTeatro = () => {
     return <div>
-      <div className="radio-total-wrapper">
+      <div className="teatro-total-wrapper">
         <div>
           Parabéns, ficaste na categoria Teatro!
           </div>
@@ -44,7 +44,7 @@ export class Result extends React.Component {
 
   showResultJorna = () => {
     return <div>
-      <div className="radio-total-wrapper">
+      <div className="jorna-total-wrapper">
         <div>
           Parabéns, ficaste na categoria Jornal!
           </div>
@@ -63,7 +63,7 @@ export class Result extends React.Component {
             {totalCat.radio > totalCat.jorna && totalCat.radio > totalCat.teatro 
             && totalCat.radio > totalCat.humana ? this.showResultRadio() : null  }
 
-            {totalCat.jorna > totalCat.jorna && totalCat.radio > totalCat.teatro 
+            {totalCat.jorna > totalCat.radio && totalCat.jorna > totalCat.teatro 
             && totalCat.jorna > totalCat.humana ? this.showResultJorna() : null  }
 
             {totalCat.humana > totalCat.radio && totalCat.humana > totalCat.teatro 
