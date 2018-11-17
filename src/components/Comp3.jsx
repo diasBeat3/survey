@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { Comp2 } from './Comp2';
+import { Comp2 } from "./Comp2";
+import { Comp4 } from "./Comp4";
 
 export class Comp3 extends React.Component {
   constructor(props) {
@@ -8,23 +9,15 @@ export class Comp3 extends React.Component {
     this.state = {
       showComp2: false,
       showComp3: true,
-      showComp4: false
+      showComp4: false,
     }
   }
-
-  previousPage = () => {
-    this.setState({
-      showComp2: true,
-      showComp3: false,
-      showComp4: false
-    })
-  }
-
+  
   nextPage = () => {
     this.setState({
       showComp2: false,
       showComp3: false,
-      showComp4: true,
+      showComp4: true
     })
   }
 
@@ -32,25 +25,29 @@ export class Comp3 extends React.Component {
 
     return (
       <section>
-        <div className="col-sm-12 quest-wrapper">
-          {this.state.showComp2 ? <Comp2></Comp2> : null}
-          {this.state.showComp3 ? <div className="quest">
+        {this.state.showComp2 ? <Comp2></Comp2> : null}
+
+        {this.state.showComp3 ?
+          <div className="quest section-background-comp2">
             <div className="title-quest-wrapper">
               <div className="title-wrapper">
-                <h3>Questão 3</h3>
+                <h3>Qual é a tua maior fraqueza?</h3>
               </div>
               <div className="quest-wrapper">
                 <ul>
-                  <li onClick={this.props.toRadio}>Rádio</li>
-                  <li>Música</li>
-                  <li>Cinema</li>
-                  <li>Resposta 4</li>
+                  <li onClick={this.props.toHumana}>Ser um coração mole!</li>
+                  <li onClick={this.props.toTeatro}>Preguiça.</li>
+                  <li onClick={this.props.toRadio}>Falar demais.</li>
+                  <li onClick={this.props.toJorna}>Necessidade constante de corrigir os outros.</li>
                 </ul>
               </div>
             </div>
-            <button onClick={this.nextPage}>next</button>
+            <div className="align-right">
+              <button onClick={this.nextPage}>Próxima questão</button>
+            </div>
           </div> : null}
-        </div>
+
+        {this.state.showComp4 ? <Comp4 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp4> : null}
       </section>
     );
   }

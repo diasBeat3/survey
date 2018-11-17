@@ -13,14 +13,6 @@ export class Comp2 extends React.Component {
     }
   }
 
-  previousPage = () => {
-    this.setState({
-      showComp1: true,
-      showComp2: false,
-      showComp3: false,
-    })
-  }
-
   nextPage = () => {
     this.setState({
       showComp1: false,
@@ -34,26 +26,28 @@ export class Comp2 extends React.Component {
     return (
       <section>
         {this.state.showComp1 ? <Comp1></Comp1> : null}
-        <div className="col-sm-12 quest-wrapper">
-          {this.state.showComp2 ? <div className="quest">
+
+        {this.state.showComp2 ?
+          <div className="quest section-background-comp2">
             <div className="title-quest-wrapper">
               <div className="title-wrapper">
-                <h3>Questão 2</h3>
+                <h3>As palavras que melhor te definem são:</h3>
               </div>
               <div className="quest-wrapper">
                 <ul>
-                  <li onClick={this.props.toRadio}>Rádio</li>
-                  <li>Música</li>
-                  <li>Cinema</li>
-                  <li>Resposta 4</li>
+                  <li onClick={this.props.toTeatro}>Irrevente, livre, sem medo de desafios;</li>
+                  <li onClick={this.props.toHumana}>Autónomo(a), responsável, consciente;</li>
+                  <li onClick={this.props.toRadio}>Radical, subversivo(a), em constante aprendizagem;</li>
+                  <li onClick={this.props.toJorna}>Disciplinado(a), metódico(a), preocupado(a) com o futuro.</li>
                 </ul>
               </div>
             </div>
-            <button onClick={this.previousPage}>previous</button>
-            <button onClick={this.nextPage}>next</button>
+            <div className="align-right">
+              <button onClick={this.nextPage}>Próxima questão</button>
+            </div>
           </div> : null}
-          {this.state.showComp3 ? <Comp3></Comp3> : null}
-        </div>
+
+        {this.state.showComp3 ? <Comp3 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp3> : null}
       </section>
     );
   }
