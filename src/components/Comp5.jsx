@@ -37,9 +37,9 @@ export class Comp5 extends React.Component {
               <div className="quest-wrapper">
                 <ul>
                   <li onClick={this.props.toRadio}>Irrevente, livre, sem medo de desafios;</li>
-                  <li>Autónomo(a), responsável, consciente;</li>
-                  <li>Radical, subversivo(a), em constante aprendizagem;</li>
-                  <li>Resposta 4</li>
+                  <li onClick={this.props.toTeatro}>Autónomo(a), responsável, consciente;</li>
+                  <li onClick={this.props.toJorna}>Radical, subversivo(a), em constante aprendizagem;</li>
+                  <li onClick={this.props.toHumana}>Resposta 4</li>
                 </ul>
               </div>
             </div>
@@ -48,7 +48,14 @@ export class Comp5 extends React.Component {
             </div>
           </div> : null}
 
-        {this.state.showComp6 ? <Comp6 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp6> : null}
+        {this.state.showComp6 ? 
+        <Comp6 
+          toRadio={this.props.toRadio} 
+          toJorna={this.props.toJorna} 
+          toHumana={this.props.toHumana} 
+          toTeatro={this.props.toTeatro}
+          totalCategories={this.props.totalCategories}>
+        </Comp6> : null}
       </section>
     );
   }

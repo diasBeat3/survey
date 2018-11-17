@@ -25,7 +25,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 0.5em;
-  background-color: #282c34;
 }
 
 .title-quest-wrapper {
@@ -35,15 +34,25 @@
 
 .main-background {
   /* background-color: grey; */
-  background-image: url('./img/roxo500.png');
+  /* background-image: url('./img/roxo500.png'); */
+  background-color: grey;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   color: white;
   font-size: 40px;
   /*margin-left: 10%; */
 }
+
+.btn-start {
+  text-align: center;
+}
+
+.btn-start-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .text1 {
   color: black;
   font-family: FjallaOne-Regular;
@@ -52,11 +61,43 @@
   margin-left: 20%;
   width: 70vw;
   text-align: right;
-
 }
 
+.radio-total-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  background-color: orange;
+}
 
+.jorna-total-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  background-color: brown;
+}
 
+.teatro-total-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  background-color: royalblue;
+}
+
+.humana-total-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  background-color: greenyellow;
+}
 
 .about-background {
   box-sizing: border-box;

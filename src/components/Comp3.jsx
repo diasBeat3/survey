@@ -22,7 +22,6 @@ export class Comp3 extends React.Component {
   }
 
   render() {
-
     return (
       <section>
         {this.state.showComp2 ? <Comp2></Comp2> : null}
@@ -47,7 +46,14 @@ export class Comp3 extends React.Component {
             </div>
           </div> : null}
 
-        {this.state.showComp4 ? <Comp4 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp4> : null}
+        {this.state.showComp4 ? 
+        <Comp4 
+          toRadio={this.props.toRadio} 
+          toJorna={this.props.toJorna} 
+          toHumana={this.props.toHumana} 
+          toTeatro={this.props.toTeatro}
+          totalCategories={this.props.totalCategories}>
+        </Comp4> : null}
       </section>
     );
   }

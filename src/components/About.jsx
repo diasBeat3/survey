@@ -8,7 +8,10 @@ export class About extends React.Component {
     return (
       <section>
         <div className="about-background">
-          About
+          <button className="btn-close" onClick={this.props.showAbout}>Close</button>
+          <div>
+            About
+          </div>
         </div>
       </section>
     );

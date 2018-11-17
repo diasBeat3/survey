@@ -17,8 +17,6 @@ export class Comp1 extends React.Component {
       showComp1: false,
       showComp2: true
     })
-
-    console.log(this.state.showComp2)
   }
 
   render() {
@@ -46,7 +44,14 @@ export class Comp1 extends React.Component {
                 <button onClick={this.nextPage}>Próxima questão</button>
               </div>
             </div>
-            : <Comp2 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp2>}
+            : <Comp2 
+            toRadio={this.props.toRadio} 
+            toJorna={this.props.toJorna} 
+            toHumana={this.props.toHumana} 
+            toTeatro={this.props.toTeatro}
+            totalCategories={this.props.totalCategories}>
+            </Comp2>
+          }
         </div>
       </section>
     );

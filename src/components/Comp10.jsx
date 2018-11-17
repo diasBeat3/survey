@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Comp9 } from "./Comp9";
+import { Result } from "./Result";
 
 
 export class Comp10 extends React.Component {
@@ -9,7 +10,15 @@ export class Comp10 extends React.Component {
     this.state = {
       showComp9: false,
       showComp10: true,
+      showResult: false,
     }
+  }
+
+  toResult = () => {
+    this.setState({
+      showComp10: false,
+      showResult: true,
+    })
   }
   
   render() {
@@ -27,16 +36,16 @@ export class Comp10 extends React.Component {
               <div className="quest-wrapper">
                 <ul>
                   <li onClick={this.props.toRadio}>Irrevente, livre, sem medo de desafios;</li>
-                  <li>Autónomo(a), responsável, consciente;</li>
-                  <li>Radical, subversivo(a), em constante aprendizagem;</li>
-                  <li>Resposta 4</li>
+                  <li onClick={this.props.toHumana}>Autónomo(a), responsável, consciente;</li>
+                  <li onClick={this.props.toJorna}>Radical, subversivo(a), em constante aprendizagem;</li>
+                  <li onClick={this.props.toTeatro}>Resposta 4</li>
                 </ul>
               </div>
             </div>
             <div className="align-right">
-              <button onClick={this.nextPage}>Próxima questão</button>
+              <button onClick={this.toResult}>Seguinte</button>
             </div>
-          </div> : null}
+          </div> : <Result totalCategories={this.props.totalCategories}></Result>}
       </section>
     );
   }

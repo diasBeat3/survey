@@ -1,21 +1,13 @@
 import React from 'react';
 import '../App.css';
 import { Comp1 } from './Comp1';
-import { Comp2 } from './Comp2';
 import { About } from './About';
-import { Intro } from './Intro';
 
 export class Main extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      categories: {
-        radio: 1,
-        humana: 2,
-        jorna: 3,
-        teatro: 4,
-      },
       total: {
         radio: 0,
         humana: 0,
@@ -26,29 +18,29 @@ export class Main extends React.Component {
       showMain: true,
     }
   }
-
+  
   onAddToRadio = () => {
-    if (this.state.total.radio++)
+    this.state.total.radio++
 
-      console.log(this.state.total.radio)
+      console.log(this.state.total.radio + ' ' + 'radio')
   }
 
   onAddToHumana = () => {
-    if (this.state.total.humana++)
+    this.state.total.humana++
 
-      console.log(this.state.total.humana)
+    console.log(this.state.total.humana + ' ' + 'humana' )
   }
 
   onAddToJorna = () => {
-    if (this.state.total.jorna++)
+    this.state.total.jorna++
 
-      console.log(this.state.total.jorna)
+    console.log(this.state.total.jorna + ' ' + 'jorna')
   }
 
   onAddToTeatro = () => {
-    if (this.state.total.teatro++)
+    this.state.total.teatro++
 
-      console.log(this.state.total.teatro)
+    console.log(this.state.total.teatro + ' ' + 'teatro')
   }
 
   onShowAbout = () => {
@@ -80,28 +72,31 @@ export class Main extends React.Component {
       <section>
         {this.state.showMain ?
           <div>
-            <button onClick={this.onShowAbout}>About</button>
-
-            {this.state.showAbout ? <About></About> :
+            {this.state.showAbout ? <About showAbout={this.onShowAbout}></About> :
             
               <div className="col-sm-12 main-background">           
-                
-                <div className= "text1">
-                 
-                  </div>  
-            <div>
-                  <button onClick={this.onShowMain}>Let's start!</button>
+                <div className= "about-button-wrapper">
+                  <button onClick={this.onShowAbout}>About</button>
+                </div>  
+                <div>
+                  <div className="btn-start-wrapper">
+                    <button onClick={this.onShowMain} className="btn-start">Let's start!</button>
+                  </div>
                 </div>
               </div>
             
             }
           </div>
-
           :
 
-
           <div className="col-sm-12 quest-wrapper">
-            <Comp1 toRadio={this.onAddToRadio} toHumana={this.onAddToHumana} toTeatro={this.onAddToTeatro} toJorna={this.onAddToJorna}></Comp1>
+            <Comp1 
+              toRadio={this.onAddToRadio} 
+              toHumana={this.onAddToHumana} 
+              toTeatro={this.onAddToTeatro} 
+              toJorna={this.onAddToJorna}
+              totalCategories={this.state.total}>
+              </Comp1>
           </div>}
 
       </section>

@@ -48,7 +48,14 @@ export class Comp7 extends React.Component {
             </div>
           </div> : null}
 
-        {this.state.showComp8 ? <Comp8 toRadio={this.props.radio} toJorna={this.props.jorna} toHumana={this.props.humana} toTeatro={this.props.teatro}></Comp8> : null}
+        {this.state.showComp8 ? 
+          <Comp8 
+            toRadio={this.props.toRadio} 
+            toJorna={this.props.toJorna} 
+            toHumana={this.props.toHumana} 
+            toTeatro={this.props.toTeatro}
+            totalCategories={this.props.totalCategories}>
+          </Comp8> : null}
       </section>
     );
   }
