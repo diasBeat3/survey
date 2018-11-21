@@ -54,16 +54,16 @@
 
 .title-main-wrapper {
   width: 100%;
-  font-size: 2em;
-  line-height: 70px;
+  line-height: 1.7em;
   padding-top: 50px;
 }
 
 .title-main-1 {
+  font-size: 1.55em;
   text-align: right;
   color: black;
   padding-right: 100px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: FjallaOne-Regular;
 }
 
 .sub-title-wrapper {
@@ -72,11 +72,11 @@
 
 .sub-title {
   color: black;
-  margin-top: 100px;
+  margin-top: 30px;
   padding-left: 100px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.3em;
-  line-height: 0.9em;
+  font-family: FjallaOne-Regular;
+  font-size: 1.5em;
+  line-height: 1.3em;
 }
 
 .text-body-wrapper {
@@ -85,9 +85,10 @@
 }
 
 .text-body {
-  padding-top: 50px;
-  font-size: 0.8em;  
+  padding-top: 30px;
+  font-size: 0.6em;  
   text-align: justify;
+  font-family: FjallaOne-Regular;
 }
 
 .buttons-wrapper {

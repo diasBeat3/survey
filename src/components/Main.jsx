@@ -96,11 +96,11 @@ export class Main extends React.Component {
                 </div>
                 <div className="col-sm-12 sub-title-wrapper">
                   <div className="sub-title">
-                    Gostas de cantar mas todos te acham <br></br> uma cana rachada?
+                    gostas de cantar mas todos te acham <br></br> uma cana rachada?
                   </div>
                 </div>
                 <div className="col-sm-12 text-body-wrapper">
-                    <div className="col-sm-6 text-body">
+                    <div className="col-sm-5 text-body">
                       Tens algum tempo livre e gostarias de o ocupar de forma útil mas não
                       sabes como nem onde? Já conheces as secções culturais da AAC? São
                       16 secções que te dão a conhecer mundos novos como o da rádio, do 
