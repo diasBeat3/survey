@@ -74,17 +74,51 @@ export class Main extends React.Component {
           <div>
             {this.state.showAbout ? <About showAbout={this.onShowAbout}></About> :
             
-              <div className="col-sm-12 main-background">           
-                <div className= "about-button-wrapper">
-                  <button onClick={this.onShowAbout}>About</button>
-                </div>  
-                <div>
-                  <div className="btn-start-wrapper">
-                    <button onClick={this.onShowMain} className="btn-start">Let's start!</button>
+              // <div className="col-sm-12 main-background">           
+              //   <div className= "about-button-wrapper">
+              //     <button onClick={this.onShowAbout}>About</button>
+              //   </div>  
+              //   <div>
+              //     <div className="btn-start-wrapper">
+              //       <button onClick={this.onShowMain} className="btn-start">Let's start!</button>
+              //     </div>
+              //   </div>
+              // </div>
+
+              <div className="col-sm-12 main-background">
+                <div className="col-sm-12 bar-title-wrapper">
+                  <div className="col-sm-5 black-bar">
+                  </div> 
+                  <div className="col-sm-7 title-main-wrapper">
+                    <div className="title-main-1">os teus amigos dizem<br></br>que és um "drama queen"?</div>
+                    {/* <h2 className="title-main-2">que és um "drama queen"?</h2> */}
                   </div>
                 </div>
-              </div>
-            
+                <div className="col-sm-12 sub-title-wrapper">
+                  <div className="sub-title">
+                    Gostas de cantar mas todos te acham <br></br> uma cana rachada?
+                  </div>
+                </div>
+                <div className="col-sm-12 text-body-wrapper">
+                    <div className="col-sm-6 text-body">
+                      Tens algum tempo livre e gostarias de o ocupar de forma útil mas não
+                      sabes como nem onde? Já conheces as secções culturais da AAC? São
+                      16 secções que te dão a conhecer mundos novos como o da rádio, do 
+                      jornalismo, da televisão, do cinema, da escrita, entre outros.
+                      Respondendo a este questionário de 10 perguntas ficarás a saber qual
+                      a secção que mais se adequa a ti.
+                    </div>
+                </div>
+                <div className="col-sm-12 buttons-wrapper">
+                    <div>
+                      <button>About</button>
+                    </div>
+                    <div className="começar-bar-wrapper">
+                      <div className="btn-start-wrapper">começar</div>
+                      <div className="bar-começar"></div>
+                    </div>
+                </div>
+              </div>            
             }
           </div>
           :

@@ -33,23 +33,87 @@
 
 .main-background {
   /* background-color: grey; */
-  /* background-image: url('./img/roxo500.png'); */
-  background-color: grey;
+  background-image: url('./img/fundo_main.png'); 
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
   color: white;
   font-size: 40px;
-  /*margin-left: 10%; */
 }
 
-.btn-start {
-  text-align: center;
+.bar-title-wrapper {
+  display: flex;
+}
+
+.black-bar {
+  margin-top: 100px;
+  height: 20px;
+  background-color: black;
+}
+
+.title-main-wrapper {
+  width: 100%;
+  font-size: 2em;
+  line-height: 70px;
+  padding-top: 50px;
+}
+
+.title-main-1 {
+  text-align: right;
+  color: black;
+  padding-right: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sub-title-wrapper {
+  
+}
+
+.sub-title {
+  color: black;
+  margin-top: 100px;
+  padding-left: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.3em;
+  line-height: 0.9em;
+}
+
+.text-body-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.text-body {
+  padding-top: 50px;
+  font-size: 0.8em;  
+  text-align: justify;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0px 250px 0px 250px;
+}
+
+.começar-bar-wrapper {
+  display: flex;
+  align-items: baseline;
 }
 
 .btn-start-wrapper {
   display: flex;
-  justify-content: center;
+  color: black;
+  font-size: 0.7em;
+}
+
+.bar-começar {
+  height: 10px;
+  width: 100px;
+  margin-left: 10px;
+  background-color: black;
 }
 
 .text1 {
