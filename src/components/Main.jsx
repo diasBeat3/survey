@@ -73,17 +73,6 @@ export class Main extends React.Component {
         {this.state.showMain ?
           <div>
             {this.state.showAbout ? <About showAbout={this.onShowAbout}></About> :
-            
-              // <div className="col-sm-12 main-background">           
-              //   <div className= "about-button-wrapper">
-              //     <button onClick={this.onShowAbout}>About</button>
-              //   </div>  
-              //   <div>
-              //     <div className="btn-start-wrapper">
-              //       <button onClick={this.onShowMain} className="btn-start">Let's start!</button>
-              //     </div>
-              //   </div>
-              // </div>
 
               <div className="col-sm-12 main-background">
                 <div className="col-sm-12 bar-title-wrapper">
@@ -91,10 +80,9 @@ export class Main extends React.Component {
                   </div> 
                   <div className="col-sm-7 title-main-wrapper">
                     <div className="title-main-1">os teus amigos dizem<br></br>que és um "drama queen"?</div>
-                    {/* <h2 className="title-main-2">que és um "drama queen"?</h2> */}
                   </div>
                 </div>
-                <div className="col-sm-12 sub-title-wrapper">
+                <div className="col-sm-12">
                   <div className="sub-title">
                     gostas de cantar mas todos te acham <br></br> uma cana rachada?
                   </div>
@@ -111,11 +99,11 @@ export class Main extends React.Component {
                 </div>
                 <div className="col-sm-12 buttons-wrapper">
                     <div>
-                      <button>About</button>
+                      <button onClick={this.onShowAbout}>About</button>
                     </div>
                     <div className="começar-bar-wrapper">
-                      <div className="btn-start-wrapper">começar</div>
-                      <div className="bar-começar"></div>
+                      <div className="btn-start-wrapper" onClick={this.onShowMain}>começar</div>
+                      <div className="bar-começar" onClick={this.onShowMain}></div>
                     </div>
                 </div>
               </div>            
