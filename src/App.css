@@ -102,6 +102,7 @@
 .começar-bar-wrapper {
   display: flex;
   align-items: baseline;
+  cursor: pointer;
 }
 
 .btn-start-wrapper {

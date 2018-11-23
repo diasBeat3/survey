@@ -111,11 +111,11 @@ export class Main extends React.Component {
                 </div>
                 <div className="col-sm-12 buttons-wrapper">
                     <div>
-                      <button>About</button>
+                      <button onClick={this.onShowAbout}>About</button>
                     </div>
                     <div className="começar-bar-wrapper">
-                      <div className="btn-start-wrapper">começar</div>
-                      <div className="bar-começar"></div>
+                      <div onClick={this.onShowMain} className="btn-start-wrapper">começar</div>
+                      <div onClick={this.onShowMain} className="bar-começar"></div>
                     </div>
                 </div>
               </div>            
