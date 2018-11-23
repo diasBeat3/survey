@@ -20,7 +20,7 @@ export class Comp10 extends React.Component {
       showResult: true,
     })
   }
-  
+
   render() {
 
     return (
@@ -28,22 +28,30 @@ export class Comp10 extends React.Component {
         {this.state.showComp9 ? <Comp9></Comp9> : null}
 
         {this.state.showComp10 ?
-          <div className="quest section-background-comp2">
+          <div className="col-sm-12 quest section-background-answers">
             <div className="title-quest-wrapper">
-              <div className="title-wrapper">
-                <h3>Q10</h3>
-              </div>
-              <div className="quest-wrapper">
-                <ul>
-                  <li onClick={this.props.toRadio}>Irrevente, livre, sem medo de desafios;</li>
-                  <li onClick={this.props.toHumana}>Autónomo(a), responsável, consciente;</li>
-                  <li onClick={this.props.toJorna}>Radical, subversivo(a), em constante aprendizagem;</li>
-                  <li onClick={this.props.toTeatro}>Resposta 4</li>
-                </ul>
+              <div className="col-sm-12 bar-title-wrapper">
+                <div className="col-sm-6">
+                  <div className="title-answer-7 title-align-left">aquilo que mais<br></br>aprecias nas pessoas é?</div>
+                </div>
+                <div className="col-sm-6 black-bar-7"></div>
               </div>
             </div>
-            <div className="align-right">
-              <button onClick={this.toResult}>Seguinte</button>
+
+            <div className="col-sm-12 align-answers-left  margin-top">
+              <ul>
+                <li onClick={this.props.toHumana}>A sua bondade;</li>
+                <li onClick={this.props.toJorna}>O seu espírito crítico;</li>
+                <li onClick={this.props.toRadio}>A sua energia;</li>
+                <li onClick={this.props.toTeatro}>Ser uma ‘open-mind’;</li>
+              </ul>
+            </div>
+
+            <div className="col-sm-12 align-right-button-next-question">
+              <div className="começar-bar-wrapper">
+                <div className="btn-start-wrapper" onClick={this.toResult}>resultado</div>
+                <div className="bar-começar" onClick={this.nextPage}></div>
+              </div>
             </div>
           </div> : <Result totalCategories={this.props.totalCategories}></Result>}
       </section>

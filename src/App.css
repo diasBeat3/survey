@@ -1,24 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.section-background-comp1 {
-  height: 100vh;
-  /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.section-background-comp2 {
-  height: 100vh;
-  /*background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
-  /*background-image: url('./img/roxo2-01.png'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .about-button-wrapper {
   box-sizing: border-box;
   display: flex;
@@ -29,6 +8,14 @@
 .title-quest-wrapper {
   box-sizing: border-box;
   padding-top: 30px;
+}
+
+.title-align-left {
+  text-align: left !important;
+}
+
+.title-align-right {
+  text-align: right !important;
 }
 
 .main-background {
@@ -52,6 +39,130 @@
   background-color: black;
 }
 
+.black-bar-2 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-3 {
+  display: flex;
+  margin-top: 70px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-4 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-5 {
+  display: flex;
+  margin-top: 70px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-6 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-7 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-8 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-9 {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-10 {
+  display: flex;
+  margin-top: 100px;
+  height: 20px;
+  background-color: black;
+}
+
+.black-bar-teatro {
+  display: flex;
+  margin-top: 150px;
+  height: 20px;
+  background-color: black;
+}
+
+.body-teatro-text-wrapper {
+  display: flex;
+  flex: 1;
+  margin: auto;
+  font-family: FjallaOne-Regular;
+}
+
+.body-teatro-text {
+  text-align: justify;
+  font-size: 1.4em !important;
+}
+
+.body-jorna-text-wrapper {
+  display: flex;
+  flex: 1;
+  margin-left: 30%;
+  font-family: FjallaOne-Regular;
+  color: black;
+}
+
+.body-jorna-text {
+  text-align: justify;
+  font-size: 1.7em !important;
+  margin-right: 0px;
+}
+
+.align-bottom {
+  margin-top: 35%;
+}
+
+.teatro-background {  
+  background-image: url('../src/img/teatro.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 95vw;
+  padding-right: 0 !important;
+}
+
+.jorna-background {
+  background-image: url('../src/img/jornal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 95vw;
+  padding-right: 0 !important;
+}
+
 .title-main-wrapper {
   width: 100%;
   line-height: 1.7em;
@@ -66,8 +177,87 @@
   font-family: FjallaOne-Regular;
 }
 
-.sub-title-wrapper {
-  
+.title-answer-1 {
+  font-size: 3em;
+  color: black;
+  padding-right: 100px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-2 {
+  font-size: 3em;
+  color: black;
+  padding-left: 100px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-3 {
+  font-size: 2.7em;
+  color: black;
+  padding-left: 40px;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-4 {
+  font-size: 3em;
+  color: black;
+  padding-left: 40px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-5 {
+  font-size: 3em;
+  color: black;
+  padding-left: 40px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-6 {
+  padding-left: 40px;
+  line-height: 1.2em;
+  font-size: 2.7em;
+  color: black;
+  padding-left: 40px;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-7 {
+  font-size: 2.7em;
+  color: black;
+  padding-left: 40px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-8 {
+  font-size: 3em;
+  color: black;
+  padding-left: 100px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-9 {
+  font-size: 2.7em;
+  color: black;
+  padding-left: 40px;
+  line-height: 1.2em;
+  font-family: FjallaOne-Regular;
+}
+
+.title-answer-10 {
+  font-size: 3em;
+  color: black;
+  padding-left: 100px;
+  font-family: FjallaOne-Regular;
+}
+
+.margin-top {
+  margin-top: 50px;
 }
 
 .sub-title {
@@ -75,8 +265,20 @@
   margin-top: 30px;
   padding-left: 100px;
   font-family: FjallaOne-Regular;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1.3em;
+}
+
+.align-answers-left {
+  display: flex;
+  justify-content: left !important;
+  text-align: left;
+}
+
+.align-answers-right {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .text-body-wrapper {
@@ -95,8 +297,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-top: 40px;
-  padding: 0px 250px 0px 250px;
+  padding: 0px 100px 0px 100px;
 }
 
 .começar-bar-wrapper {
@@ -105,10 +306,31 @@
   cursor: pointer;
 }
 
+.about-bar-wrapper {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
 .btn-start-wrapper {
+  font-family: FjallaOne-Regular;
   display: flex;
   color: black;
   font-size: 0.7em;
+}
+
+.btn-about-wrapper {
+  font-family: FjallaOne-Regular;
+  display: flex;
+  color: black;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.bar-about {
+  height: 10px;
+  width: 100px;
+  background-color: black;
 }
 
 .bar-começar {
@@ -182,6 +404,12 @@
   text-align: right;
 }
 
+.align-right-button-next-question {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3em;
+}
+
 h1 {
   font-family: FjallaOne-Regular;
   font-size: 50px;
@@ -191,55 +419,34 @@ h3 {font-family: FjallaOne-Regular;
   font-size: 50px;
 }
 
+.section-background-answers {
+  height: 100vh;
+  width: 100vw;
+}
+
 .quest-wrapper {
   display: flex;
-  width: 100vw;
   justify-content: center;
 }
 
 .quest {
-  text-align: center;
   font-size: 30px;
 }
 
 ul {
   font-family: FjallaOne-Regular;
   list-style: none;
-  text-align: left;
 }
 
 ul > li {
-  background-color: #272727a4;
+  font-family: FjallaOne-Regular;
   margin-bottom: 5px;
-  color: white;
+  color:black;
   padding: 5px 15px 5px 15px;
   cursor: pointer;
   border-radius: 10px;
 }
 
-ul > li:hover {
-  background-color: #8d8d8d79;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 button {
   background-color: #272727a4;
   font-family: FjallaOne-Regular;
@@ -250,15 +457,37 @@ button {
   border-radius: 10px;
   border: 0px;
   font-size: 15px;
-
-
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-result-teatro {
+  font-size: 4.5em;
+  text-align: right !important;
+  color: black;
+  padding-left: 40px;
+  padding-right: 100px;
+  font-family: FjallaOne-Regular;
+}
+
+.title-result-jorna {
+  font-size: 4.7em;
+  text-align: right !important;
+  color: black;
+  padding-left: 40px;
+  padding-right: 100px;
+  font-family: FjallaOne-Regular;
+}
+
+.btn-sabe-mais-wrapper {
+  font-family: FjallaOne-Regular;
+  display: flex;
+  color: black;
+  font-size: 1.2em;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
 }
