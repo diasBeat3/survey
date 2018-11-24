@@ -24,7 +24,12 @@ export class Result extends React.Component {
     </div>
     <div className="col-sm-5 body-radio-text-wrapper">
       <div className="body-radio-text">
-        Insira aqui o seu texto.
+      A secção que mais se adequa a ti é RUC, Rádio Universidade Coimbra: 
+      a rádio escola mais antiga do país que conta com 32 anos de existência. 
+      A rádio funciona como uma cooperativa artística onde se reúnem várias pessoas sem 
+      limite de idade e com diferentes backgrounds. É livre, irreverente e com espaço para o erro. 
+      Aqui aprende-se a fazer rádio ao mesmo tempo que se cresce enquanto pessoa.
+
         </div>
     </div>
     <div className="col-sm-12 align-right-button-next-question">
@@ -42,13 +47,19 @@ export class Result extends React.Component {
       <div className="bar-title-wrapper">
         <div className="col-sm-4 black-bar-humana"></div>
         <div className="col-sm-8">
-          <div className="title-result-humana title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
+          <div className="title-result-humana title-align-left">secção de defesa<br></br>dos direitos<br></br>humanos</div>
         </div>
       </div>
     </div>
-    <div className="col-sm-5 body-humana-text-wrapper">
+    <div className="col-sm-6 body-humana-text-wrapper">
       <div className="body-humana-text">
-        Insira aqui o seu texto.
+      A secção que mais se adequa a ti é a Secção de Defesa dos Direitos Humanos. 
+      A secção que se define como desafiante mas enriquecedora e que tem como objetivo principal 
+      a denúncia das diversas violações de Direitos Humanos, através da informação, formação e educação de 
+      todas as temáticas relacionadas com estes.
+É um espaço feito por estudantes e para estudantes que incentiva ao espírito crítico. 
+Quem por aqui passa, leva consigo um desenvolvimento quer a nível pessoal, quer a nível académico, 
+novas capacidades e novos contactos.
         </div>
     </div>
     <div className="col-sm-12 align-right-button-next-question">
@@ -66,7 +77,7 @@ export class Result extends React.Component {
         <div className="bar-title-wrapper">
           <div className="col-sm-5 black-bar-teatro"></div>
           <div className="col-sm-7">
-            <div className="title-result-teatro title-align-left">secção de defesa<br></br>dos direitos<br></br>humanos</div>
+            <div className="title-result-teatro title-align-left">círculo de inciação<br></br>teatral da academia<br></br>de coimbra</div>
           </div>
         </div>
       </div>

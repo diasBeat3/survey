@@ -21,13 +21,14 @@
                         </div>
                       </div>
                       <div className="col-sm-12 text-body-about-wrapper">
-                          <div className="col-sm-5 text-body-about">
-                            Tens algum tempo livre e gostarias de o ocupar de forma útil mas não
-                            sabes como nem onde? Já conheces as secções culturais da AAC? São
-                            16 secções que te dão a conhecer mundos novos como o da rádio, do 
-                            jornalismo, da televisão, do cinema, da escrita, entre outros.
-                            Respondendo a este questionário de 10 perguntas ficarás a saber qual
-                            a secção que mais se adequa a ti.
+                          <div className="col-sm-7 text-body-about">
+                          Este projeto foi desenvolvido na unidade curricular de “Oficina de Design de Comunicação”.
+Numa primeira fase foi pedido para identificar um problema que afectasse a comunidade da Universidade de Coimbra e, 
+numa segunda, o desenvolvimento de um protótipo funcional que demonstre a eficácia comunicacional para combater o 
+problema identificado. Neste caso específico, tratou-se o tema das secções culturais da Associação Académica de Coimbra: 
+a fraca divulgação destas e o trabalho desenvolvido por elas não ser conhecido.
+O objetivo final deste projecto é, com a divulgação das secções culturais da AAC, 
+tentar traduzi-la num maior número de interessados(as) nas mesmas.
                           </div>
                       </div>
                     </div> 
