@@ -24,6 +24,15 @@
         }
 
         changeColorHumana = () => {
+          if (this.state.colorChangeRadio == true || this.state.colorChangeTeatro || this.state.colorChangeJorna
+             == false) {
+              this.setState({
+                colorChangeRadio: true,
+                colorChangeJorna: true,
+                colorChangeTeatro: true,
+              })
+          }
+
           if (this.state.colorChangeHumana == true) {
             this.setState({
               colorChangeHumana: false
@@ -36,6 +45,15 @@
         }
 
         changeColorRadio = () => {
+          if (this.state.colorChangeHumana == true || this.state.colorChangeTeatro || this.state.colorChangeJorna
+            == false) {
+             this.setState({
+               colorChangeHumana: true,
+               colorChangeJorna: true,
+               colorChangeTeatro: true,
+             })
+          }
+
           if (this.state.colorChangeRadio == true) {
             this.setState({
               colorChangeRadio: false
@@ -48,6 +66,16 @@
         }
 
         changeColorTeatro = () => {
+          if (this.state.colorChangeRadio == true || this.state.colorChangeHumana
+             || this.state.colorChangeJorna
+            == false) {
+             this.setState({
+               colorChangeRadio: true,
+               colorChangeJorna: true,
+               colorChangeHumana: true,
+             })
+          }
+
           if (this.state.colorChangeTeatro == true) {
             this.setState({
               colorChangeTeatro: false
@@ -60,6 +88,16 @@
         }
 
         changeColorJorna = () => {
+          if (this.state.colorChangeRadio == true || this.state.colorChangeHumana
+            || this.state.colorChangeTeatro
+           == false) {
+            this.setState({
+              colorChangeRadio: true,
+              colorChangeTeatro: true,
+              colorChangeHumana: true,
+            })
+          }
+
           if (this.state.colorChangeJorna == true) {
             this.setState({
               colorChangeJorna: false

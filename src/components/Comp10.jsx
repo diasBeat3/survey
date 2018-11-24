@@ -26,6 +26,15 @@ export class Comp10 extends React.Component {
   }
 
   changeColorHumana = () => {
+    if (this.state.colorChangeRadio == true || this.state.colorChangeTeatro || this.state.colorChangeJorna
+       == false) {
+        this.setState({
+          colorChangeRadio: true,
+          colorChangeJorna: true,
+          colorChangeTeatro: true,
+        })
+    }
+
     if (this.state.colorChangeHumana == true) {
       this.setState({
         colorChangeHumana: false
@@ -38,6 +47,15 @@ export class Comp10 extends React.Component {
   }
 
   changeColorRadio = () => {
+    if (this.state.colorChangeHumana == true || this.state.colorChangeTeatro || this.state.colorChangeJorna
+      == false) {
+       this.setState({
+         colorChangeHumana: true,
+         colorChangeJorna: true,
+         colorChangeTeatro: true,
+       })
+    }
+
     if (this.state.colorChangeRadio == true) {
       this.setState({
         colorChangeRadio: false
@@ -50,6 +68,16 @@ export class Comp10 extends React.Component {
   }
 
   changeColorTeatro = () => {
+    if (this.state.colorChangeRadio == true || this.state.colorChangeHumana
+       || this.state.colorChangeJorna
+      == false) {
+       this.setState({
+         colorChangeRadio: true,
+         colorChangeJorna: true,
+         colorChangeHumana: true,
+       })
+    }
+
     if (this.state.colorChangeTeatro == true) {
       this.setState({
         colorChangeTeatro: false
@@ -62,6 +90,16 @@ export class Comp10 extends React.Component {
   }
 
   changeColorJorna = () => {
+    if (this.state.colorChangeRadio == true || this.state.colorChangeHumana
+      || this.state.colorChangeTeatro
+     == false) {
+      this.setState({
+        colorChangeRadio: true,
+        colorChangeTeatro: true,
+        colorChangeHumana: true,
+      })
+    }
+
     if (this.state.colorChangeJorna == true) {
       this.setState({
         colorChangeJorna: false
