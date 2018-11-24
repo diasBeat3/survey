@@ -14,35 +14,50 @@ export class Result extends React.Component {
 
   showResultRadio = () => {
     return <div className="col-sm-12 radio-background">
-      <div className="title-quest-wrapper">
-        <div className="bar-title-wrapper">
-          <div className="col-sm-8 black-bar-3"></div>
-          <div className="col-sm-4">
-            <div className="title-answer-3 title-align-left">qual é<br></br>a tua maior<br></br>fraqueza?</div>
-          </div>
+    <div className="title-quest-wrapper">
+      <div className="bar-title-wrapper">
+        <div className="col-sm-4 black-bar-radio"></div>
+        <div className="col-sm-8">
+          <div className="title-result-radio title-align-left">rádio<br></br>universidade<br></br>de coimbra</div>
         </div>
       </div>
-      <div className="col-sm-6">
-        A secção que mais se adequa a ti é o CITAC, Círculo de
-        Iniciação Teatral da Academia de Coimbra.
-        O CITAC assume-se como experimental, em constante
-        renovação resistindo a moldes pré-concebidos. Ganhou
-        destaque pela sua resistência ao fascismo, tendo sido o
-        grupo até perseguido e fechado pela PIDE. É um espaço para
-        pessoas interessadas em fazer teatro e em experimentar o
-        crescimento pessoal através da arte.
-              </div>
     </div>
+    <div className="col-sm-5 body-radio-text-wrapper">
+      <div className="body-radio-text">
+        Insira aqui o seu texto.
+        </div>
+    </div>
+    <div className="col-sm-12 align-right-button-next-question">
+      <div className="começar-bar-wrapper">
+        <a className="btn-sabe-mais-wrapper link-style" href="https://www.facebook.com/RUC107.9FM/">sabe mais aqui</a>
+        <a className="bar-começar" href="https://www.facebook.com/RUC107.9FM/"></a>
+      </div>
+    </div>
+  </div>
   }
 
   showResultHumana = () => {
-    return <div>
-      <div className="humana-total-wrapper">
-        <div>
-          Parabéns, ficaste na categoria Humana!
-              </div>
+    return <div className="col-sm-12 humana-background">
+    <div className="title-quest-wrapper">
+      <div className="bar-title-wrapper">
+        <div className="col-sm-4 black-bar-humana"></div>
+        <div className="col-sm-8">
+          <div className="title-result-humana title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
+        </div>
       </div>
     </div>
+    <div className="col-sm-5 body-humana-text-wrapper">
+      <div className="body-humana-text">
+        Insira aqui o seu texto.
+        </div>
+    </div>
+    <div className="col-sm-12 align-right-button-next-question">
+      <div className="começar-bar-wrapper">
+        <a className="btn-sabe-mais-wrapper link-style" href="https://www.facebook.com/sddhaac/">sabe mais aqui</a>
+        <a className="bar-começar" href="https://www.facebook.com/sddhaac/"></a>
+      </div>
+    </div>
+  </div>
   }
 
   showResultTeatro = () => {
@@ -51,7 +66,7 @@ export class Result extends React.Component {
         <div className="bar-title-wrapper">
           <div className="col-sm-5 black-bar-teatro"></div>
           <div className="col-sm-7">
-            <div className="title-result-teatro title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
+            <div className="title-result-teatro title-align-left">secção de defesa<br></br>dos direitos<br></br>humanos</div>
           </div>
         </div>
       </div>

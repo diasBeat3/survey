@@ -99,8 +99,8 @@ export class Main extends React.Component {
                 </div>
                 <div className="col-sm-12 buttons-wrapper">
                 <div className="about-bar-wrapper">
-                      <div className="bar-começar" onClick={this.onShowMain}></div>
-                      <div className="btn-about-wrapper" onClick={this.onShowMain}>about</div>
+                      <div className="bar-começar" onClick={this.onShowAbout}></div>
+                      <div className="btn-about-wrapper" onClick={this.onShowAbout}>about</div>
                     </div>
                     <div className="começar-bar-wrapper">
                       <div className="btn-start-wrapper" onClick={this.onShowMain}>começar</div>
