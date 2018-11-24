@@ -10,6 +10,10 @@
           showComp1: false,
           showComp2: true,
           showComp3: false,
+          colorChangeHumana: true,
+          colorChangeRadio: true,
+          colorChangeJorna: true,
+          colorChangeTeatro: true
         }
       }
 
@@ -19,6 +23,54 @@
           showComp2: false,
           showComp3: true
         })
+      }
+
+      changeColorHumana = () => {
+        if (this.state.colorChangeHumana == true) {
+          this.setState({
+            colorChangeHumana: false
+          })
+      } else {
+          this.setState({
+            colorChangeHumana: true
+          })
+        }
+      }
+
+      changeColorRadio = () => {
+        if (this.state.colorChangeRadio == true) {
+          this.setState({
+            colorChangeRadio: false
+          })
+      } else {
+          this.setState({
+            colorChangeRadio: true
+          })
+        }
+      }
+
+      changeColorTeatro = () => {
+        if (this.state.colorChangeTeatro == true) {
+          this.setState({
+            colorChangeTeatro: false
+          })
+      } else {
+          this.setState({
+            colorChangeTeatro: true
+          })
+        }
+      }
+
+      changeColorJorna = () => {
+        if (this.state.colorChangeJorna == true) {
+          this.setState({
+            colorChangeJorna: false
+          })
+      } else {
+          this.setState({
+            colorChangeJorna: true
+          })
+        }
       }
 
       render() {
@@ -40,10 +92,30 @@
 
                 <div className="col-sm-12 align-answers-right">
                   <ul>
-                      <li onClick={this.props.toTeatro}>Irrevente, livre, sem medo de desafios;</li>
-                      <li onClick={this.props.toHumana}>Autónomo(a), responsável, consciente;</li>
-                      <li onClick={this.props.toRadio}>Radical, subversivo(a), em constante aprendizagem;</li>
-                      <li onClick={this.props.toJorna}>Disciplinado(a), metódico(a), preocupado(a) com o futuro.</li>
+                        <li onClick={this.props.toTeatro} className="red-color-hover">
+                          {this.state.colorChangeTeatro ? 
+                            <span onClick={this.changeColorTeatro}>Irrevente, livre, sem medo de desafios;</span> :
+                            <span onClick={this.changeColorTeatro} className="red-color-perm">Irrevente, livre, sem medo de desafios;</span>
+                          }
+                        </li>
+                        <li onClick={this.props.toHumana} className="green-color-hover">
+                          {this.state.colorChangeHumana ? 
+                            <span onClick={this.changeColorHumana}>Autónomo(a), responsável, consciente;</span> :
+                            <span onClick={this.changeColorHumana} className="green-color-perm">Autónomo(a), responsável, consciente;</span> 
+                          }
+                        </li>
+                        <li onClick={this.props.toRadio} className="blue-color-hover">
+                          {this.state.colorChangeRadio ? 
+                            <span onClick={this.changeColorRadio}>Radical, subversivo(a), em constante aprendizagem;</span> :
+                            <span onClick={this.changeColorRadio} className="blue-color-perm" >Radical, subversivo(a), em constante aprendizagem;</span>
+                          }
+                        </li>
+                        <li onClick={this.props.toJorna} className="orange-color-hover">
+                          {this.state.colorChangeJorna ? 
+                            <span onClick={this.changeColorJorna}>Disciplinado(a), metódico(a), preocupado(a) com o futuro.</span> :
+                            <span onClick={this.changeColorJorna} className="orange-color-perm">Disciplinado(a), metódico(a), preocupado(a) com o futuro.</span>
+                          }
+                        </li>
                   </ul>
                 </div>
                       

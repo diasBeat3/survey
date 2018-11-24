@@ -16,8 +16,8 @@ export class Result extends React.Component {
     return <div className="col-sm-12 radio-background">
     <div className="title-quest-wrapper">
       <div className="bar-title-wrapper">
-        <div className="col-sm-4 black-bar-radio"></div>
-        <div className="col-sm-8">
+        <div className="col-sm-6 black-bar-radio"></div>
+        <div className="col-sm-6">
           <div className="title-result-radio title-align-left">rádio<br></br>universidade<br></br>de coimbra</div>
         </div>
       </div>
@@ -40,9 +40,9 @@ export class Result extends React.Component {
     return <div className="col-sm-12 humana-background">
     <div className="title-quest-wrapper">
       <div className="bar-title-wrapper">
-        <div className="col-sm-4 black-bar-humana"></div>
-        <div className="col-sm-8">
-          <div className="title-result-humana title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
+        <div className="col-sm-6 black-bar-humana"></div>
+        <div className="col-sm-6">
+          <div className="title-result-humana title-align-left">secção de defesa<br></br>dos direitos<br></br>humanos</div>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ export class Result extends React.Component {
         <div className="bar-title-wrapper">
           <div className="col-sm-5 black-bar-teatro"></div>
           <div className="col-sm-7">
-            <div className="title-result-teatro title-align-left">secção de defesa<br></br>dos direitos<br></br>humanos</div>
+            <div className="title-result-teatro title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@ export class Result extends React.Component {
     return (
       <section>
         <div className="col-sm-12">
-          {this.state.showComp10 ? <Comp10></Comp10> : null}
+          {/* {this.state.showResult ? <Comp10></Comp10> : null} */}
 
           {totalCat.radio > totalCat.jorna && totalCat.radio > totalCat.teatro
             && totalCat.radio > totalCat.humana ? this.showResultRadio() : null}

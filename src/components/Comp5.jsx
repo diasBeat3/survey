@@ -11,6 +11,10 @@
         showComp4: false,
         showComp5: true,
         showComp6: false,
+        colorChangeHumana: true,
+        colorChangeRadio: true,
+        colorChangeJorna: true,
+        colorChangeTeatro: true
       }
     }
     
@@ -20,6 +24,54 @@
         showComp5: false,
         showComp6: true
       })
+    }
+
+    changeColorHumana = () => {
+      if (this.state.colorChangeHumana == true) {
+        this.setState({
+          colorChangeHumana: false
+        })
+    } else {
+        this.setState({
+          colorChangeHumana: true
+        })
+      }
+    }
+
+    changeColorRadio = () => {
+      if (this.state.colorChangeRadio == true) {
+        this.setState({
+          colorChangeRadio: false
+        })
+    } else {
+        this.setState({
+          colorChangeRadio: true
+        })
+      }
+    }
+
+    changeColorTeatro = () => {
+      if (this.state.colorChangeTeatro == true) {
+        this.setState({
+          colorChangeTeatro: false
+        })
+    } else {
+        this.setState({
+          colorChangeTeatro: true
+        })
+      }
+    }
+
+    changeColorJorna = () => {
+      if (this.state.colorChangeJorna == true) {
+        this.setState({
+          colorChangeJorna: false
+        })
+    } else {
+        this.setState({
+          colorChangeJorna: true
+        })
+      }
     }
 
     render() {
@@ -41,12 +93,32 @@
 
             <div className="col-sm-12 align-answers-left margin-top">
               <ul>
-                    <li onClick={this.props.toHumana}>Ver todas as fotos do teu telemóvel publicadas no facebook;</li>
-                    <li onClick={this.props.toJorna}>Ver a tua pior foto transformada num "meme" viral;</li>
-                    <li onClick={this.props.toRadio}>Um famoso ‘retweetar' um foto horrível tua;</li>
-                    <li onClick={this.props.toTeatro}>Perder todos os seguidores no Instagram;</li>
-                    </ul>
-              </div>
+                            <li onClick={this.props.toTeatro} className="red-color-hover">
+                                {this.state.colorChangeTeatro ? 
+                                  <span onClick={this.changeColorTeatro}>Perder todos os seguidores no Instagram;</span> :
+                                  <span onClick={this.changeColorTeatro} className="red-color-perm">Perder todos os seguidores no Instagram;</span>
+                                }
+                              </li>
+                              <li onClick={this.props.toHumana} className="green-color-hover">
+                                {this.state.colorChangeHumana ? 
+                                  <span onClick={this.changeColorHumana}>Ver todas as fotos do teu telemóvel publicadas no facebook;</span> :
+                                  <span onClick={this.changeColorHumana} className="green-color-perm">Ver todas as fotos do teu telemóvel publicadas no facebook;</span> 
+                                }
+                              </li>
+                              <li onClick={this.props.toRadio} className="blue-color-hover">
+                                {this.state.colorChangeRadio ? 
+                                  <span onClick={this.changeColorRadio}>Um famoso ‘retweetar' um foto horrível tua;</span> :
+                                  <span onClick={this.changeColorRadio} className="blue-color-perm">Um famoso ‘retweetar' um foto horrível tua;</span>
+                                }
+                              </li>
+                              <li onClick={this.props.toJorna} className="orange-color-hover">
+                                {this.state.colorChangeJorna ? 
+                                  <span onClick={this.changeColorJorna}>Ver a tua pior foto transformada num "meme" viral;</span> :
+                                  <span onClick={this.changeColorJorna} className="orange-color-perm">Ver a tua pior foto transformada num "meme" viral;</span>
+                                }
+                            </li>
+              </ul>
+            </div>
                           
               <div className="col-sm-12 align-right-button-next-question">
                   <div className="começar-bar-wrapper">

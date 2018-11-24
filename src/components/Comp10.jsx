@@ -11,6 +11,10 @@ export class Comp10 extends React.Component {
       showComp9: false,
       showComp10: true,
       showResult: false,
+      colorChangeHumana: true,
+      colorChangeRadio: true,
+      colorChangeJorna: true,
+      colorChangeTeatro: true
     }
   }
 
@@ -19,6 +23,54 @@ export class Comp10 extends React.Component {
       showComp10: false,
       showResult: true,
     })
+  }
+
+  changeColorHumana = () => {
+    if (this.state.colorChangeHumana == true) {
+      this.setState({
+        colorChangeHumana: false
+      })
+  } else {
+      this.setState({
+        colorChangeHumana: true
+      })
+    }
+  }
+
+  changeColorRadio = () => {
+    if (this.state.colorChangeRadio == true) {
+      this.setState({
+        colorChangeRadio: false
+      })
+  } else {
+      this.setState({
+        colorChangeRadio: true
+      })
+    }
+  }
+
+  changeColorTeatro = () => {
+    if (this.state.colorChangeTeatro == true) {
+      this.setState({
+        colorChangeTeatro: false
+      })
+  } else {
+      this.setState({
+        colorChangeTeatro: true
+      })
+    }
+  }
+
+  changeColorJorna = () => {
+    if (this.state.colorChangeJorna == true) {
+      this.setState({
+        colorChangeJorna: false
+      })
+  } else {
+      this.setState({
+        colorChangeJorna: true
+      })
+    }
   }
 
   render() {
@@ -40,10 +92,30 @@ export class Comp10 extends React.Component {
 
             <div className="col-sm-12 align-answers-left  margin-top">
               <ul>
-                <li onClick={this.props.toHumana}>A sua bondade;</li>
-                <li onClick={this.props.toJorna}>O seu espírito crítico;</li>
-                <li onClick={this.props.toRadio}>A sua energia;</li>
-                <li onClick={this.props.toTeatro}>Ser uma ‘open-mind’;</li>
+                                  <li onClick={this.props.toTeatro} className="red-color-hover">
+                                    {this.state.colorChangeTeatro ? 
+                                      <span onClick={this.changeColorTeatro}>Ser uma ‘open-mind’;</span> :
+                                      <span onClick={this.changeColorTeatro} className="red-color-perm">Ser uma ‘open-mind’;</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toHumana} className="green-color-hover">
+                                    {this.state.colorChangeHumana ? 
+                                      <span onClick={this.changeColorHumana}>A sua bondade;</span> :
+                                      <span onClick={this.changeColorHumana} className="green-color-perm">A sua bondade;</span> 
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toRadio} className="blue-color-hover">
+                                    {this.state.colorChangeRadio ? 
+                                      <span onClick={this.changeColorRadio}>A sua energia;</span> :
+                                      <span onClick={this.changeColorRadio} className="blue-color-perm">A sua energia;</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toJorna} className="orange-color-hover">
+                                    {this.state.colorChangeJorna ? 
+                                      <span onClick={this.changeColorJorna}>O seu espírito crítico;</span> :
+                                      <span onClick={this.changeColorJorna} className="orange-color-perm">O seu espírito crítico;</span>
+                                    }
+                                </li>
               </ul>
             </div>
 

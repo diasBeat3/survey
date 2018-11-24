@@ -11,6 +11,10 @@
         showComp7: false,
         showComp8: true,
         showComp9: false,
+        colorChangeHumana: true,
+        colorChangeRadio: true,
+        colorChangeJorna: true,
+        colorChangeTeatro: true
       }
     }
 
@@ -20,6 +24,54 @@
         showComp8: false,
         showComp9: true
       })
+    }
+
+    changeColorHumana = () => {
+      if (this.state.colorChangeHumana == true) {
+        this.setState({
+          colorChangeHumana: false
+        })
+    } else {
+        this.setState({
+          colorChangeHumana: true
+        })
+      }
+    }
+
+    changeColorRadio = () => {
+      if (this.state.colorChangeRadio == true) {
+        this.setState({
+          colorChangeRadio: false
+        })
+    } else {
+        this.setState({
+          colorChangeRadio: true
+        })
+      }
+    }
+
+    changeColorTeatro = () => {
+      if (this.state.colorChangeTeatro == true) {
+        this.setState({
+          colorChangeTeatro: false
+        })
+    } else {
+        this.setState({
+          colorChangeTeatro: true
+        })
+      }
+    }
+
+    changeColorJorna = () => {
+      if (this.state.colorChangeJorna == true) {
+        this.setState({
+          colorChangeJorna: false
+        })
+    } else {
+        this.setState({
+          colorChangeJorna: true
+        })
+      }
     }
 
     render() {
@@ -41,12 +93,32 @@
 
             <div className="col-sm-12 align-answers-left margin-top">
               <ul>
-                    <li onClick={this.props.toRadio}>Jardinagem.</li>
-                    <li onClick={this.props.toJorna}>Fazer crochet.</li>
-                    <li onClick={this.props.toHumana}>Pintura.</li>
-                    <li onClick={this.props.toTeatro}>Yoga.</li>
-                    </ul>
-                    </div>
+                                <li onClick={this.props.toTeatro} className="red-color-hover">
+                                    {this.state.colorChangeTeatro ? 
+                                      <span onClick={this.changeColorTeatro}>Yoga.</span> :
+                                      <span onClick={this.changeColorTeatro} className="red-color-perm">Yoga.</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toHumana} className="green-color-hover">
+                                    {this.state.colorChangeHumana ? 
+                                      <span onClick={this.changeColorHumana}>Pintura.</span> :
+                                      <span onClick={this.changeColorHumana} className="green-color-perm">Pintura.</span> 
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toRadio} className="blue-color-hover">
+                                    {this.state.colorChangeRadio ? 
+                                      <span onClick={this.changeColorRadio}>Jardinagem.</span> :
+                                      <span onClick={this.changeColorRadio} className="blue-color-perm">Jardinagem.</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toJorna} className="orange-color-hover">
+                                    {this.state.colorChangeJorna ? 
+                                      <span onClick={this.changeColorJorna}>Fazer crochet.</span> :
+                                      <span onClick={this.changeColorJorna} className="orange-color-perm">Fazer crochet.</span>
+                                    }
+                                </li>
+              </ul>
+            </div>
                           
                     <div className="col-sm-12 align-right-button-next-question margin-top">
                       <div className="começar-bar-wrapper">

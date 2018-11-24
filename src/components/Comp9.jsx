@@ -11,6 +11,10 @@
         showComp8: false,
         showComp9: true,
         showComp10: false,
+        colorChangeHumana: true,
+        colorChangeRadio: true,
+        colorChangeJorna: true,
+        colorChangeTeatro: true
       }
     }
     
@@ -20,6 +24,54 @@
         showComp9: false,
         showComp10: true
       })
+    }
+
+    changeColorHumana = () => {
+      if (this.state.colorChangeHumana == true) {
+        this.setState({
+          colorChangeHumana: false
+        })
+    } else {
+        this.setState({
+          colorChangeHumana: true
+        })
+      }
+    }
+
+    changeColorRadio = () => {
+      if (this.state.colorChangeRadio == true) {
+        this.setState({
+          colorChangeRadio: false
+        })
+    } else {
+        this.setState({
+          colorChangeRadio: true
+        })
+      }
+    }
+
+    changeColorTeatro = () => {
+      if (this.state.colorChangeTeatro == true) {
+        this.setState({
+          colorChangeTeatro: false
+        })
+    } else {
+        this.setState({
+          colorChangeTeatro: true
+        })
+      }
+    }
+
+    changeColorJorna = () => {
+      if (this.state.colorChangeJorna == true) {
+        this.setState({
+          colorChangeJorna: false
+        })
+    } else {
+        this.setState({
+          colorChangeJorna: true
+        })
+      }
     }
 
     render() {
@@ -41,12 +93,32 @@
 
             <div className="col-sm-12 align-answers-left margin-top">
               <ul>
-                    <li onClick={this.props.toRadio}>"Ia perguntar o mesmo!"</li>
-                    <li onClick={this.props.toJorna}>"Pode ser. Mas só um copo mesmo!"</li>
-                    <li onClick={this.props.toHumana}>Não dá amanhã acordo cedo."</li>
-                    <li onClick={this.props.toTeatro}>"Sim, precisamos de por a conversa em dia"</li>
-                    </ul>
-                      </div>
+                                  <li onClick={this.props.toTeatro} className="red-color-hover">
+                                    {this.state.colorChangeTeatro ? 
+                                      <span onClick={this.changeColorTeatro}>"Sim, precisamos de por a conversa em dia"</span> :
+                                      <span onClick={this.changeColorTeatro} className="red-color-perm">"Sim, precisamos de por a conversa em dia"</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toHumana} className="green-color-hover">
+                                    {this.state.colorChangeHumana ? 
+                                      <span onClick={this.changeColorHumana}>"Não dá amanhã acordo cedo."</span> :
+                                      <span onClick={this.changeColorHumana} className="green-color-perm">"Não dá amanhã acordo cedo."</span> 
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toRadio} className="blue-color-hover">
+                                    {this.state.colorChangeRadio ? 
+                                      <span onClick={this.changeColorRadio}>"Ia perguntar o mesmo!"</span> :
+                                      <span onClick={this.changeColorRadio} className="blue-color-perm">"Ia perguntar o mesmo!"</span>
+                                    }
+                                  </li>
+                                  <li onClick={this.props.toJorna} className="orange-color-hover">
+                                    {this.state.colorChangeJorna ? 
+                                      <span onClick={this.changeColorJorna}>"Pode ser. Mas só um copo mesmo!"</span> :
+                                      <span onClick={this.changeColorJorna} className="orange-color-perm">"Pode ser. Mas só um copo mesmo!"</span>
+                                    }
+                                </li>
+              </ul>
+            </div>
                             
                       <div className="col-sm-12 align-right-button-next-question">
                         <div className="começar-bar-wrapper">
