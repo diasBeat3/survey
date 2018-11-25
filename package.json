@@ -2,7 +2,7 @@
   "name": "questionary",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://carlosaniel.github.io/survey/",
+  "homepage": "https://Carlosaniel.github.io/survey/",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "gh-pages": "^2.0.1",
@@ -15,8 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
