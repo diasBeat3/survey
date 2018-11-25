@@ -78,7 +78,7 @@
           <div className="bar-title-wrapper">
             <div className="col-sm-5 black-bar-teatro"></div>
             <div className="col-sm-7">
-              <div className="title-result-teatro title-align-left">cícrculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
+              <div className="title-result-teatro title-align-left">círculo de iniciação<br></br>teatral da academia<br></br>de coimbra</div>
             </div>
           </div>
         </div>
