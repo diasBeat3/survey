@@ -1,8 +1,8 @@
 {
   "name": "questionary",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://carlosaniel.github.io/survey/",
+  "private": false,
+  "homepage": "https://Carlosaniel.github.io/survey",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "gh-pages": "^2.0.1",
