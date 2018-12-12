@@ -117,14 +117,18 @@
                 {this.state.showComp1 ?
                   <div className="col-sm-12 quest section-background-answers">
                     <div className="title-quest-wrapper">
+                    
                     <div className="col-sm-12 bar-title-wrapper">
-                        
-                    <div className="col-sm-5 black-bar"></div>
+                        <div className="col-sm-5 black-bar"></div>
                         <div className="col-sm-7">
                           <div className="title-answer-1 title-align-right">como descreverias<br></br>os teus hábitos<br></br>de sono?</div>
                         </div>
-                      
                     </div>
+
+                    <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                          <div className="title-answer-1-mobile title-align-right">como descreverias<br></br>os teus hábitos<br></br>de sono?</div>
+                    </div>
+
                     <div className="col-sm-12 quest-wrapper align-answers-left">
                       <ul>
                         <li onClick={this.props.toHumana} className="green-color-hover">

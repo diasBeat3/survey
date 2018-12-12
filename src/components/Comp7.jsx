@@ -120,6 +120,7 @@
 
             {this.state.showComp7 ?
               <div className="col-sm-12 quest section-background-answers">
+
               <div className="title-quest-wrapper">
                 <div className="col-sm-12 bar-title-wrapper">
                   <div className="col-sm-6">
@@ -127,6 +128,10 @@
                   </div>
                   <div className="col-sm-6 black-bar-7"></div>
                 </div>
+              </div>
+
+              <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                  <div className="title-answer-7-mobile title-align-left">qual dos<br></br>seguintes nomes<br></br>conheces?</div>
               </div>
 
               <div className="col-sm-12 align-answers-left  margin-top">

@@ -119,6 +119,7 @@
 
             {this.state.showComp2 ?
               <div className="col-sm-12 quest section-background-answers">
+
                 <div className="title-quest-wrapper">
                   <div className="col-sm-12 bar-title-wrapper">
                     <div className="col-sm-6">
@@ -126,6 +127,10 @@
                     </div>
                     <div className="col-sm-6 black-bar-2"></div>
                   </div>
+                </div>
+
+                <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                      <div className="title-answer-2-mobile title-align-left">as palavras<br></br>que melhor<br></br>te definem são:</div>
                 </div>
 
                 <div className="col-sm-12 align-answers-right">

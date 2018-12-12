@@ -120,6 +120,7 @@
 
           {this.state.showComp8 ?
             <div className="col-sm-12 quest section-background-answers">
+
             <div className="title-quest-wrapper">
               <div className="col-sm-12 bar-title-wrapper">
                 <div className="col-sm-7 black-bar-8"></div>
@@ -127,6 +128,10 @@
                   <div className="title-answer-8 title-align-right">escolhe<br></br>um hobby:</div>
                 </div>
               </div>
+            </div>
+            
+            <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+              <div className="title-answer-8-mobile title-align-right">escolhe<br></br>um hobby:</div>
             </div>
 
             <div className="col-sm-12 align-answers-left margin-top">

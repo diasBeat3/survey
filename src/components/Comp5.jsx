@@ -120,6 +120,7 @@
 
           {this.state.showComp5 ?
             <div className="col-sm-12 quest section-background-answers">
+
             <div className="title-quest-wrapper">
               <div className="col-sm-12 bar-title-wrapper">
                 <div className="col-sm-5">
@@ -127,6 +128,10 @@
                 </div>
                 <div className="col-sm-7 black-bar-5"></div>
               </div>
+            </div>
+
+            <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                <div className="title-answer-5-mobile title-align-left">o que<br></br>é que preferias?</div>
             </div>
 
             <div className="col-sm-12 align-answers-left margin-top">

@@ -74,21 +74,30 @@ export class Main extends React.Component {
           <div>
             {this.state.showAbout ? <About showAbout={this.onShowAbout}></About> :
 
-              <div className="col-sm-12 main-background">
+              <div className="col-sm-12 main-background main-background-mobile">
                 <div className="col-sm-12 bar-title-wrapper">
                   <div className="col-sm-5 black-bar">
-                  </div> 
-                  <div className="col-sm-7 title-main-wrapper">
-                    <div className="title-main-1">os teus amigos dizem<br></br>que és um "drama queen"?</div>
+                    </div>
+                    <div className="col-sm-7 title-main-wrapper title-main-wrapper-mobile">
+                      <div className="title-main-1 title-main-1-mobile">os teus amigos dizem<br></br>que és um "drama queen"?</div>
+                   </div>
+                </div>
+
+                <div className="col-sm-12 bar-title-wrapper-mobile">
+                  <div className="col-sm-7 title-main-wrapper title-main-wrapper-mobile">
+                    <div className="title-main-1 title-main-1-mobile">os teus amigos dizem que és um "drama queen"?</div>
                   </div>
                 </div>
+                <div className="col-sm-12 black-bar-mobile">
+                </div>
+
                 <div className="col-sm-12">
-                  <div className="sub-title">
+                  <div className="sub-title sub-title-mobile">
                     gostas de cantar mas todos te acham <br></br> uma cana rachada?
                   </div>
                 </div>
-                <div className="col-sm-12 text-body-wrapper">
-                    <div className="col-sm-5 text-body">
+                <div className="col-sm-12 text-body-wrapper text-body-wrapper-mobile">
+                    <div className="col-sm-5 text-body text-body-mobile">
                       Tens algum tempo livre e gostarias de o ocupar de forma útil mas não
                       sabes como nem onde? Já conheces as secções culturais da AAC? São
                       16 secções que te dão a conhecer mundos novos como o da rádio, do 
@@ -98,21 +107,35 @@ export class Main extends React.Component {
                     </div>
                 </div>
                 <div className="col-sm-12 buttons-wrapper">
-                <div className="about-bar-wrapper">
-                      <div className="bar-começar" onClick={this.onShowAbout}></div>
-                      <div className="btn-about-wrapper" onClick={this.onShowAbout}>about</div>
+                    <div className="about-bar-wrapper about-bar-wrapper-mobile">
+                      <div className="bar-começar bar-começar-mobile" onClick={this.onShowAbout}></div>
+                      <div className="btn-about-wrapper btn-about-wrapper-mobile" onClick={this.onShowAbout}>about</div>
                     </div>
-                    <div className="começar-bar-wrapper">
-                      <div className="btn-start-wrapper" onClick={this.onShowMain}>começar</div>
-                      <div className="bar-começar" onClick={this.onShowMain}></div>
+                    <div className="começar-bar-wrapper começar-bar-wrapper-mobile">
+                      <div className="btn-start-wrapper btn-start-wrapper-mobile" onClick={this.onShowMain}>começar</div>
+                      <div className="bar-começar bar-começar-mobile" onClick={this.onShowMain}></div>
                     </div>
                 </div>
+
+                <div className="col-sm-12 buttons-wrapper-mobile">
+                    <div className="col-sm-12 about-bar-wrapper-mobile">
+                      <div className="bar-começar-mobile" onClick={this.onShowAbout}></div>
+                      <div className="btn-about-wrapper-mobile" onClick={this.onShowAbout}>about</div>
+                    </div>
+                </div>
+
+                <div className="col-sm-12 buttons-wrapper-mobile">
+                    <div className="col-sm-12 começar-bar-wrapper-mobile">
+                      <div className="btn-start-wrapper-mobile" onClick={this.onShowMain}>começar</div>
+                      <div className="bar-começar-mobile" onClick={this.onShowMain}></div>
+                    </div>
+                  </div>
               </div>            
             }
           </div>
           :
 
-          <div className="col-sm-12 quest-wrapper">
+          <div className="col-sm-12 quest-wrapper quest-wrapper-mobile">
             <Comp1 
               toRadio={this.onAddToRadio} 
               toHumana={this.onAddToHumana} 
