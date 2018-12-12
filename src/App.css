@@ -1,625 +1,1294 @@
-.about-button-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.5em;
-}
+@media only screen and (max-width: 599px) {
 
-.title-quest-wrapper {
-  box-sizing: border-box;
-  padding-top: 30px;
-}
-
-.title-align-left {
-  text-align: left !important;
-}
-
-.title-align-right {
-  text-align: right !important;
-}
-
-.main-background {
-  /* background-color: grey; */
-  background-image: url('./img/fundo_main.png'); 
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  color: white;
-  font-size: 40px;
-}
-
-.bar-title-wrapper {
-  display: flex;
-}
-
-.black-bar {
-  margin-top: 100px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-2 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-3 {
-  display: flex;
-  margin-top: 70px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-4 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-5 {
-  display: flex;
-  margin-top: 70px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-6 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-7 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-8 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-9 {
-  display: flex;
-  align-self: flex-end;
-  margin-bottom: 50px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-10 {
-  display: flex;
-  margin-top: 100px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-teatro {
-  display: flex;
-  margin-top: 150px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-humana {
-  display: flex;
-  margin-top: 150px;
-  height: 20px;
-  background-color: black;
-}
-
-.black-bar-radio {
-  display: flex;
-  margin-top: 150px;
-  height: 20px;
-  background-color: black;
-}
-
-.body-teatro-text-wrapper {
-  display: flex;
-  flex: 1;
-  margin: auto;
-  font-family: FjallaOne-Regular;
-}
-
-.body-teatro-text {
-  text-align: justify;
-  font-size: 1.4em !important;
-}
-
-.body-jorna-text-wrapper {
-  display: flex;
-  flex: 1;
-  margin-left: 30%;
-  font-family: FjallaOne-Regular;
-  color: black;
-}
-
-.body-jorna-text {
-  text-align: justify;
-  font-size: 1.7em !important;
-  margin-right: 0px;
-}
-
-.body-humana-text-wrapper {
-  display: flex;
-  flex: 1;
-  margin-left: 20%;
-  font-family: FjallaOne-Regular;
-  color: black;
-}
-
-.body-humana-text {
-  text-align: justify;
-  font-size: 1.4em !important;
-  margin-right: 0px;
-  color: white; 
-}
-
-.align-bottom {
-  margin-top: 35%;
-}
-
-.body-radio-text-wrapper {
-  display: flex;
-  flex: 1;
-  margin-left: 25%;
+  .about-button-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+  }
   
-  font-family: FjallaOne-Regular;
-  color: black;
-}
-
-.body-radio-text {
-  text-align: justify;
-  font-size: 1.5em !important;
-  margin-right: 0px;
-  margin-top: 1%;
-}
-
-.teatro-background {  
-  background-image: url('../src/img/teatro.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 95vh;
-  width: 95vw;
-  padding-right: 0 !important;
-}
-
-.jorna-background {
-  background-image: url('../src/img/jornal.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 95vh;
-  width: 95vw;
-  padding-right: 0 !important;
-}
-
-.humana-background {
-  background-image: url('../src/img/humana.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 95vh;
-  width: 95vw;
-  padding-right: 0 !important;
-}
-
-.radio-background {
-  background-image: url('../src/img/radio.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 95vh;
-  width: 95vw;
-  padding-right: 0 !important;
-}
-
-
-.title-main-wrapper {
-  width: 100%;
-  line-height: 1.7em;
-  padding-top: 50px;
-}
-
-.title-main-1 {
-  font-size: 1.55em;
-  text-align: right;
-  color: black;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-about {
-  font-size: 1.55em;
-  text-align: right;
-  color: black;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-1 {
-  font-size: 3em;
-  color: black;
-  padding-right: 100px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-2 {
-  font-size: 3em;
-  color: black;
-  padding-left: 100px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-3 {
-  font-size: 2.7em;
-  color: black;
-  padding-left: 40px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-4 {
-  font-size: 3em;
-  color: black;
-  padding-left: 40px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-5 {
-  font-size: 3em;
-  color: black;
-  padding-left: 40px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-6 {
-  padding-left: 40px;
-  line-height: 1.2em;
-  font-size: 2.7em;
-  color: black;
-  padding-left: 40px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-7 {
-  font-size: 2.7em;
-  color: black;
-  padding-left: 40px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-8 {
-  font-size: 3em;
-  color: black;
-  padding-left: 100px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-9 {
-  font-size: 2.7em;
-  color: black;
-  padding-left: 40px;
-  line-height: 1.2em;
-  font-family: FjallaOne-Regular;
-}
-
-.title-answer-10 {
-  font-size: 3em;
-  color: black;
-  padding-left: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.margin-top {
-  margin-top: 50px;
-}
-
-.sub-title {
-  color: black;
-  margin-top: 30px;
-  padding-left: 100px;
-  font-family: FjallaOne-Regular;
-  font-size: 1.2em;
-  line-height: 1.3em;
-}
-
-.align-answers-left {
-  display: flex;
-  justify-content: left !important;
-  text-align: left;
-}
-
-.align-answers-right {
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.text-body-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.text-body {
-  padding-top: 30px;
-  font-size: 0.6em;  
-  text-align: justify;
-  font-family: FjallaOne-Regular;
-}
-
-.text-body-about-wrapper {
-  display: flex;
-  margin-left: 50px;
-}
-
-.text-body-about {
-  padding-top: 70px;
-  font-size: 0.5em;  
-  text-align: justify;
-  font-family: FjallaOne-Regular;
-}
-
-.buttons-wrapper {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 0px 100px 0px 100px;
-}
-
-.começar-bar-wrapper {
-  display: flex;
-  align-items: baseline;
-  cursor: pointer;
-}
-
-.about-bar-wrapper {
-  display: flex;
-  align-items: baseline;
-  cursor: pointer;
-}
-
-.btn-start-wrapper {
-  font-family: FjallaOne-Regular;
-  display: flex;
-  color: black;
-  font-size: 0.7em;
-}
-
-.btn-about-wrapper {
-  font-family: FjallaOne-Regular;
-  display: flex;
-  color: black;
-  font-size: 0.7em;
-  margin-left: 10px;
-}
-
-.bar-about {
-  height: 10px;
-  width: 100px;
-  background-color: black;
-}
-
-.bar-começar {
-  height: 10px;
-  width: 100px;
-  margin-left: 10px;
-  background-color: black;
-}
-
-.text1 {
-  color: black;
-  font-family: FjallaOne-Regular;
-  font-size: 30px;
-  padding-top: 10%;
-  margin-left: 20%;
-  width: 70vw;
-  text-align: right;
-}
-
-.radio-total-wrapper {
-  display: flex;
-  color: white;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 50px;
-  background-color: orange;
-}
-
-.jorna-total-wrapper {
-  display: flex;
-  color: white;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 50px;
-  background-color: brown;
-}
-
-.teatro-total-wrapper {
-  display: flex;
-  color: white;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 50px;
-  background-color: royalblue;
-}
-
-.humana-total-wrapper {
-  display: flex;
-  color: white;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 50px;
-  background-color: rgb(81, 116, 53);
-}
-
-.about-background {
-  box-sizing: border-box;
-  font-size: 50px;
-  text-align: center;
-  height: 100vh;
-}
-
-.align-right {
-  width: 76%;
-  text-align: right;
-}
-
-.align-right-button-next-question {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 3em;
-}
-
-h1 {
-  font-family: FjallaOne-Regular;
-  font-size: 50px;
-}
-
-h3 {font-family: FjallaOne-Regular;
-  font-size: 50px;
-}
-
-.section-background-answers {
-  height: 100vh;
-  width: 100vw;
-}
-
-.quest-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.quest {
-  font-size: 30px;
-}
-
-ul {
-  font-family: FjallaOne-Regular;
-  list-style: none;
-}
-
-ul > li {
-  font-family: FjallaOne-Regular;
-  margin-bottom: 5px;
-  color:black;
-  padding: 5px 15px 5px 15px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-button {
-  background-color: #272727a4;
-  font-family: FjallaOne-Regular;
-  margin-bottom: 5px;
-  color: white;
-  padding: 5px 15px 5px 15px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 0px;
-  font-size: 15px;
-}
-
-.title-result-teatro {
-  font-size: 4.5em;
-  text-align: right !important;
-  color: black;
-  padding-left: 40px;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-result-jorna {
-  font-size: 4.7em;
-  text-align: right !important;
-  color: black;
-  padding-left: 40px;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-result-humana {
-  font-size: 4.7em;
-  text-align: right !important;
-  color: black;
-  padding-left: 40px;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.title-result-radio {
-  font-size: 4.7em;
-  text-align: right !important;
-  color: black;
-  padding-left: 40px;
-  padding-right: 100px;
-  font-family: FjallaOne-Regular;
-}
-
-.btn-sabe-mais-wrapper {
-  font-family: FjallaOne-Regular;
-  display: flex;
-  color: black;
-  font-size: 1.2em;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:hover {
-  color:black;
-}
-
-.green-color-hover:hover {
-  color: green;
-}
-
-.green-color-perm {
-  color: green;
-}
-
-.blue-color-hover:hover {
-  color: blue;
-}
-
-.blue-color-perm {
-  color: blue;
-}
-
-.orange-color-hover:hover {
-  color: orange;
-}
-
-.orange-color-perm {
-  color: orange;
-}
-
-.red-color-hover:hover {
-  color: red;
-}
-
-.red-color-perm {
-  color: red;
-}
+  .title-quest-wrapper {
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+  
+  .sub-title-mobile {
+    display: none;
+  }
+
+  .title-align-left {
+    text-align: left !important;
+  }
+  
+  .title-align-right {
+    text-align: right !important;
+  }
+  
+  .main-background-mobile {
+    /* background-color: grey; */
+    background-image: url('./img/fundo_main.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 100vh;
+    width: 85vw;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .bar-title-wrapper {
+    display: none;
+  }
+
+  .bar-title-wrapper-mobile {
+    display: flex;
+  }
+  
+  .black-bar-mobile {
+    margin-top: 25px;
+    height: 10px;
+    background-color: black;
+  }
+
+  .black-bar-upper-mobile {
+    width: 100%;
+    height: 10px;
+    background-color: black; 
+  }
+  
+  .black-bar-2-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-3-mobile {
+    display: none;
+    margin-top: 70px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-4-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-5-mobile {
+    display: none;
+    margin-top: 70px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-6-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-7-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-8-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-9-mobile {
+    display: none;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-10-mobile {
+    display: none;
+    margin-top: 100px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-teatro {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-humana {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-radio {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .body-teatro-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin: auto;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .body-teatro-text {
+    text-align: justify;
+    font-size: 1.4em !important;
+  }
+  
+  .body-jorna-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 30%;
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-jorna-text {
+    text-align: justify;
+    font-size: 1.7em !important;
+    margin-right: 0px;
+  }
+  
+  .body-humana-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 20%;
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-humana-text {
+    text-align: justify;
+    font-size: 1.4em !important;
+    margin-right: 0px;
+    color: white; 
+  }
+  
+  .align-bottom {
+    margin-top: 35%;
+  }
+  
+  .body-radio-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 25%;
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-radio-text {
+    text-align: justify;
+    font-size: 1.5em !important;
+    margin-right: 0px;
+    margin-top: 1%;
+  }
+  
+  .teatro-background {  
+    background-image: url('../src/img/teatro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .jorna-background {
+    background-image: url('../src/img/jornal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .humana-background {
+    background-image: url('../src/img/humana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .radio-background {
+    background-image: url('../src/img/radio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  
+  .title-main-wrapper-mobile {
+    width: 100%;
+    line-height: 0.7em;
+    padding-top: 50px;
+  }
+  
+  .title-main-1-mobile {
+    font-size: 30px;
+    text-align: right;
+    color: black;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-about {
+    font-size: 1.55em;
+    text-align: right;
+    color: black;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-1-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 50px;
+    color: black;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-2-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 50px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-3-mobile {
+    font-size: 1.5em;
+    line-height: 1.1em;
+    font-weight: bold;
+    color: black;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-4-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.1em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-5-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.1em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-6-mobile {
+    line-height: 1.1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-7-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-8-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    padding-left: 100px;
+    line-height: 1.1em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-9-mobile {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.1em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-10-mobile {
+    font-size: 3em;
+    color: black;
+    padding-left: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .margin-top {
+    margin-top: 50px;
+  }
+  
+  .sub-title {
+    color: black;
+    margin-top: 30px;
+    padding-left: 100px;
+    font-family: FjallaOne-Regular;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  
+  .align-answers-left {
+    display: flex;
+    justify-content: left !important;
+    text-align: left;
+  }
+  
+  .align-answers-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .text-body-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-body-mobile {
+    padding-top: 30px;
+    font-size: 0.5em;  
+    text-align: justify;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .text-body-about-wrapper-mobile {
+    display: flex;
+  }
+  
+  .text-body-about-mobile {
+    padding-top: 70px;
+    margin-bottom: 100px;
+    font-size: 0.5em;  
+    text-align: justify;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .buttons-wrapper {
+    display: none;
+  }
+
+  .buttons-wrapper-mobile {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  .começar-bar-wrapper-mobile {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .about-bar-wrapper-mobile {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .btn-start-wrapper-mobile {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    margin-left: 80px;
+    color: black;
+    font-size: 0.7em;
+  }
+  
+  .btn-about-wrapper-mobile {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    color: black;
+    font-size: 0.7em;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .bar-about-mobile {
+    height: 10px;
+    width: 100px;
+    background-color: black;
+  }
+  
+  .bar-começar-mobile {
+    height: 10px;
+    width: 50px;
+    margin-left: 10px;
+    background-color: black;
+  }
+  
+  .text1 {
+    color: black;
+    font-family: FjallaOne-Regular;
+    font-size: 30px;
+    padding-top: 10%;
+    margin-left: 20%;
+    width: 70vw;
+    text-align: right;
+  }
+  
+  .radio-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: orange;
+  }
+  
+  .jorna-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: brown;
+  }
+  
+  .teatro-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: royalblue;
+  }
+  
+  .humana-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: rgb(81, 116, 53);
+  }
+  
+  .about-background {
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    height: 90vh;
+  }
+  
+  .align-right {
+    width: 76%;
+    text-align: right;
+  }
+  
+  .align-right-button-next-question {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+  
+  h1 {
+    font-family: FjallaOne-Regular;
+    font-size: 50px;
+  }
+  
+  h3 {font-family: FjallaOne-Regular;
+    font-size: 50px;
+  }
+  
+  .section-background-answers {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .quest-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quest {
+    font-size: 30px;
+  }
+  
+  ul {
+    font-family: FjallaOne-Regular;
+    list-style: none;
+  }
+  
+  ul > li {
+    font-family: FjallaOne-Regular;
+    margin-bottom: 5px;
+    color:black;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #272727a4;
+    font-family: FjallaOne-Regular;
+    margin-bottom: 5px;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 15px;
+  }
+  
+  .title-result-teatro {
+    font-size: 4.5em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-jorna {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-humana {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-radio {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .btn-sabe-mais-wrapper {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    color: black;
+    font-size: 1.2em;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:black;
+  }
+  
+  .green-color-hover:hover {
+    color: green;
+  }
+  
+  .green-color-perm {
+    color: green;
+  }
+  
+  .blue-color-hover:hover {
+    color: blue;
+  }
+  
+  .blue-color-perm {
+    color: blue;
+  }
+  
+  .orange-color-hover:hover {
+    color: orange;
+  }
+  
+  .orange-color-perm {
+    color: orange;
+  }
+  
+  .red-color-hover:hover {
+    color: red;
+  }
+  
+  .red-color-perm {
+    color: red;
+  }
+  
+  }
+  
+@media only screen and (min-width: 600px) {
+    .about-button-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+  }
+  
+  .buttons-wrapper-mobile {
+    display: none;
+
+  }
+  .title-quest-wrapper {
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+  
+  .title-align-left {
+    text-align: left !important;
+  }
+  
+  .title-align-right {
+    text-align: right !important;
+  }
+  
+  .main-background {
+    /* background-color: grey; */
+    background-image: url('./img/fundo_main.png'); 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+  }
+
+  .black-bar-upper-mobile {
+    display: none;
+  }
+  
+  .bar-title-wrapper {
+    display: flex;
+  }
+  
+  .text-body-about-wrapper {
+    display: flex;
+  }
+
+  .bar-title-wrapper-mobile {
+    display: none;
+  }
+  
+  .black-bar {
+    margin-top: 100px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-2 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-3 {
+    display: flex;
+    margin-top: 70px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-4 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-5 {
+    display: flex;
+    margin-top: 70px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-6 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-7 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-8 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-9 {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-10 {
+    display: flex;
+    margin-top: 100px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-teatro {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-humana {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .black-bar-radio {
+    display: flex;
+    margin-top: 150px;
+    height: 20px;
+    background-color: black;
+  }
+  
+  .body-teatro-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin: auto;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .body-teatro-text {
+    text-align: justify;
+    font-size: 1.4em !important;
+  }
+  
+  .body-jorna-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 30%;
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-jorna-text {
+    text-align: justify;
+    font-size: 1.7em !important;
+    margin-right: 0px;
+  }
+  
+  .body-humana-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 20%;
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-humana-text {
+    text-align: justify;
+    font-size: 1.4em !important;
+    margin-right: 0px;
+    color: white; 
+  }
+  
+  .align-bottom {
+    margin-top: 35%;
+  }
+  
+  .body-radio-text-wrapper {
+    display: flex;
+    flex: 1;
+    margin-left: 25%;
+    
+    font-family: FjallaOne-Regular;
+    color: black;
+  }
+  
+  .body-radio-text {
+    text-align: justify;
+    font-size: 1.5em !important;
+    margin-right: 0px;
+    margin-top: 1%;
+  }
+  
+  .teatro-background {  
+    background-image: url('../src/img/teatro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .jorna-background {
+    background-image: url('../src/img/jornal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .humana-background {
+    background-image: url('../src/img/humana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  .radio-background {
+    background-image: url('../src/img/radio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 95vw;
+    padding-right: 0 !important;
+  }
+  
+  
+  .title-main-wrapper {
+    width: 100%;
+    line-height: 1.7em;
+    padding-top: 50px;
+  }
+  
+  .title-main-1 {
+    font-size: 1.55em;
+    text-align: right;
+    color: black;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-about-mobile {
+    font-size: 45em;
+    color: black;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-1 {
+    font-size: 3em;
+    color: black;
+    padding-right: 100px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-2 {
+    font-size: 3em;
+    color: black;
+    padding-left: 100px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-3 {
+    font-size: 2.7em;
+    color: black;
+    padding-left: 40px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-4 {
+    font-size: 3em;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-5 {
+    font-size: 3em;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-6 {
+    padding-left: 40px;
+    line-height: 1.2em;
+    font-size: 2.7em;
+    color: black;
+    padding-left: 40px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-7 {
+    font-size: 2.7em;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-8 {
+    font-size: 3em;
+    color: black;
+    padding-left: 100px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-9 {
+    font-size: 2.7em;
+    color: black;
+    padding-left: 40px;
+    line-height: 1.2em;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-answer-10 {
+    font-size: 3em;
+    color: black;
+    padding-left: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .margin-top {
+    margin-top: 50px;
+  }
+  
+  .sub-title {
+    color: black;
+    margin-top: 30px;
+    padding-left: 100px;
+    font-family: FjallaOne-Regular;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+  
+  .align-answers-left {
+    display: flex;
+    justify-content: left !important;
+    text-align: left;
+  }
+  
+  .align-answers-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .text-body-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .text-body {
+    padding-top: 30px;
+    font-size: 0.6em;  
+    text-align: justify;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .text-body-about-wrapper {
+    display: flex;
+    padding-left: 50px;
+  }
+  
+  .text-body-about {
+    padding-top: 70px;
+    font-size: 0.5em;  
+    text-align: justify;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .buttons-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+  }
+  
+  .começar-bar-wrapper {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .about-bar-wrapper {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  
+  .btn-start-wrapper {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    color: black;
+    font-size: 0.7em;
+  }
+  
+  .btn-about-wrapper {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    color: black;
+    font-size: 0.7em;
+    margin-left: 10px;
+  }
+  
+  .bar-about {
+    height: 10px;
+    width: 100px;
+    background-color: black;
+  }
+  
+  .bar-começar {
+    height: 10px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: black;
+  }
+  
+  .text1 {
+    color: black;
+    font-family: FjallaOne-Regular;
+    font-size: 30px;
+    padding-top: 10%;
+    margin-left: 20%;
+    width: 70vw;
+    text-align: right;
+  }
+  
+  .radio-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: orange;
+  }
+  
+  .jorna-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: brown;
+  }
+  
+  .teatro-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: royalblue;
+  }
+  
+  .humana-total-wrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    background-color: rgb(81, 116, 53);
+  }
+  
+  .about-background {
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+    height: 90vh;
+  }
+  
+  .align-right {
+    width: 76%;
+    text-align: right;
+  }
+  
+  .align-right-button-next-question {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3em;
+  }
+  
+  h1 {
+    font-family: FjallaOne-Regular;
+    font-size: 50px;
+  }
+  
+  h3 {font-family: FjallaOne-Regular;
+    font-size: 50px;
+  }
+  
+  .section-background-answers {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .quest-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quest {
+    font-size: 30px;
+  }
+  
+  ul {
+    font-family: FjallaOne-Regular;
+    list-style: none;
+  }
+  
+  ul > li {
+    font-family: FjallaOne-Regular;
+    margin-bottom: 5px;
+    color:black;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #272727a4;
+    font-family: FjallaOne-Regular;
+    margin-bottom: 5px;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 15px;
+  }
+  
+  .title-result-teatro {
+    font-size: 4.5em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-jorna {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-humana {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .title-result-radio {
+    font-size: 4.7em;
+    text-align: right !important;
+    color: black;
+    padding-left: 40px;
+    padding-right: 100px;
+    font-family: FjallaOne-Regular;
+  }
+  
+  .btn-sabe-mais-wrapper {
+    font-family: FjallaOne-Regular;
+    display: flex;
+    color: black;
+    font-size: 1.2em;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:black;
+  }
+  
+  .green-color-hover:hover {
+    color: green;
+  }
+  
+  .green-color-perm {
+    color: green;
+  }
+  
+  .blue-color-hover:hover {
+    color: blue;
+  }
+  
+  .blue-color-perm {
+    color: blue;
+  }
+  
+  .orange-color-hover:hover {
+    color: orange;
+  }
+  
+  .orange-color-perm {
+    color: orange;
+  }
+  
+  .red-color-hover:hover {
+    color: red;
+  }
+  
+  .red-color-perm {
+    color: red;
+  }
+  }

@@ -119,6 +119,7 @@
 
             {this.state.showComp6 ?
               <div className="col-sm-12 quest section-background-answers">
+
               <div className="title-quest-wrapper">
                 <div className="col-sm-12 bar-title-wrapper">
                   <div className="col-sm-6">
@@ -126,6 +127,11 @@
                   </div>
                   <div className="col-sm-6 black-bar-6"></div>
                 </div>
+              </div>
+
+              
+              <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                <div className="title-answer-6-mobile title-align-left">aquilo<br></br>que não pode faltar<br></br>no teu dia é:</div>
               </div>
 
               <div className="col-sm-12 align-answers-left margin-top">

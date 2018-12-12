@@ -126,6 +126,10 @@
                     <div className="col-sm-6 black-bar-3"></div>
                   </div>
                 </div>
+                
+                <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+                    <div className="title-answer-3-mobile title-align-left">qual é a tua <br></br>maior fraqueza?</div>
+                </div>
 
                 <div className="col-sm-12 align-answers-left margin-top">
                           <ul>

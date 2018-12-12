@@ -120,6 +120,7 @@
 
           {this.state.showComp9 ?
             <div className="col-sm-12 quest section-background-answers">
+
             <div className="title-quest-wrapper">
               <div className="col-sm-12 bar-title-wrapper">
                 <div className="col-sm-5 black-bar-9"></div>
@@ -127,6 +128,10 @@
                   <div className="title-answer-9 title-align-right">quando te convidam<br></br>para ir beber um copo<br></br>respondes com:</div>
                 </div>
               </div>
+            </div>
+            
+            <div className="col-sm-12 bar-title-wrapper bar-title-wrapper-mobile">
+              <div className="title-answer-9-mobile title-align-right">quando te convidam<br></br>para ir beber um copo<br></br>respondes com:</div>
             </div>
 
             <div className="col-sm-12 align-answers-left margin-top">
