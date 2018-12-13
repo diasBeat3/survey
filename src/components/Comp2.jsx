@@ -133,7 +133,7 @@
                       <div className="title-answer-2-mobile title-align-left">as palavras<br></br>que melhor<br></br>te definem são:</div>
                 </div>
 
-                <div className="col-sm-12 align-answers-right">
+                <div className="col-sm-12 align-answers-right font-size-mobile">
                   <ul>
                         <li onClick={this.props.toTeatro} className="red-color-hover">
                           {this.state.colorChangeTeatro ? 
@@ -164,7 +164,7 @@
                       
                 <div className="col-sm-12 align-right-button-next-question margin-top">
                   <div className="começar-bar-wrapper">
-                    <div className="btn-start-wrapper" onClick={this.nextPage}>Próxima questão</div>
+                    <div className="btn-start-wrapper font-size-btn-start" onClick={this.nextPage}>Próxima questão</div>
                     <div className="bar-começar" onClick={this.nextPage}></div>
                   </div>
                 </div>
