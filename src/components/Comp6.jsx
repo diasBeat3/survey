@@ -134,7 +134,7 @@
                 <div className="title-answer-6-mobile title-align-left">aquilo<br></br>que não pode faltar<br></br>no teu dia é:</div>
               </div>
 
-              <div className="col-sm-12 align-answers-left margin-top">
+              <div className="col-sm-12 align-answers-left margin-top font-size-mobile">
                     <ul>
                               <li onClick={this.props.toTeatro} className="red-color-hover">
                                   {this.state.colorChangeTeatro ? 
@@ -165,7 +165,7 @@
                           
                     <div className="col-sm-12 align-right-button-next-question">
                       <div className="começar-bar-wrapper">
-                        <div className="btn-start-wrapper" onClick={this.nextPage}>Próxima questão</div>
+                        <div className="btn-start-wrapper font-size-btn-start" onClick={this.nextPage}>Próxima questão</div>
                         <div className="bar-começar" onClick={this.nextPage}></div>
                       </div>
                     </div>

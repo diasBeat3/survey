@@ -133,7 +133,7 @@ export class Comp10 extends React.Component {
                 <div className="title-answer-7-mobile title-align-left">aquilo que mais<br></br>aprecias nas pessoas é?</div>
             </div>
 
-            <div className="col-sm-12 align-answers-left  margin-top">
+            <div className="col-sm-12 align-answers-left margin-top font-size-mobile">
               <ul>
                                   <li onClick={this.props.toTeatro} className="red-color-hover">
                                     {this.state.colorChangeTeatro ? 
@@ -164,7 +164,7 @@ export class Comp10 extends React.Component {
 
             <div className="col-sm-12 align-right-button-next-question">
               <div className="começar-bar-wrapper">
-                <div className="btn-start-wrapper" onClick={this.toResult}>resultado</div>
+                <div className="btn-start-wrapper font-size-btn-start" onClick={this.toResult}>resultado</div>
                 <div className="bar-começar" onClick={this.nextPage}></div>
               </div>
             </div>

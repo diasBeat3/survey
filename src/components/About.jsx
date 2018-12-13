@@ -22,13 +22,13 @@
                       </div>
 
                       <div className="col-sm-12 bar-title-wrapper-mobile">
-                        <div className="col-sm-7 title-about-wrapper">
+                        <div className="col-sm-12 title-about-wrapper-mobile">
                           <div className="title-about-mobile">sobre este projecto</div>
                         </div>
-                        <div className="col-sm-12 black-bar-mobile">
+                        <div className="black-bar-about-mobile">
                         </div> 
                       </div>
-
+                      
                       <div className="col-sm-12 text-body-about-wrapper text-body-about-wrapper-mobile">
                           <div className="col-sm-7 text-body-about text-body-about-mobile">
                           Este projeto foi desenvolvido na unidade curricular de “Oficina de Design de Comunicação”.

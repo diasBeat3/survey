@@ -75,6 +75,7 @@ export class Main extends React.Component {
             {this.state.showAbout ? <About showAbout={this.onShowAbout}></About> :
 
               <div className="col-sm-12 main-background main-background-mobile">
+                
                 <div className="col-sm-12 bar-title-wrapper">
                   <div className="col-sm-5 black-bar">
                     </div>
@@ -88,7 +89,7 @@ export class Main extends React.Component {
                     <div className="title-main-1 title-main-1-mobile">os teus amigos dizem que és um "drama queen"?</div>
                   </div>
                 </div>
-                <div className="col-sm-12 black-bar-mobile">
+                <div className="black-bar-mobile">
                 </div>
 
                 <div className="col-sm-12">
